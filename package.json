@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "@nuxtjs/vuetify": "^1.12.3"
+  },
+  "dependencies": {
+    "jquery": "^3.6.1"
+  }
+}

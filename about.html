@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Centro Médico Nueva Salud</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="otorrino, pediatria, medicina, doctor, doctora, Rancagua,
+                machali" name="keywords">
+    <meta content="Somos un Centro Médico y Diagnóstico.
+                Con énfasis en Otorrinolaringología, Traumatología, Medicina General
+                y Pediatría." name="description">
+
+    <!--Bootstrap5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- Favicon -->
+    <link href="img/favicon/favicon-16x16.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet/less" type="text/css" href="css/styles.less" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Vue3 -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle
+                w-100 vh-100 top-50 start-50 d-flex align-items-center
+                justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height:
+                    3rem;" role="status">
+            <span class="sr-only visually-hidden">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid container-topbar bg-light bg-blue p-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="row gx-0 d-none d-lg-flex h-tpbar">
+            <div class="col-lg-7 top-bar border-box-1">
+                <div class=" d-inline-flex align-items-center box-address">
+                    <big class="fa fa-map-marker-alt text-light icon-address"></big>
+                    <a class="fs-6 btn-address" href="contact.html">
+                        <small class="top-bar address" id="direccion">Pucará 020, Machalí</small></a>
+                </div>
+                <div class="top-horario h-100 d-inline-flex align-items-center">
+                    <big class="far fa-clock text-light me-xl-2 icon-clock"></big>
+                    <small class="top-bar h-tpbar horario">
+                        <div class="hora-semana">
+                            <p class="txt-horario h-tpbar"> Lunes - Viernes: 08.00AM - 20.00PM </p>
+                            <p class="txt-horario h-tpbar"> Sábado: 09.00AM - 14.00PM</p>
+                        </div>
+                        <b class="text-uppercase text-bg-danger border-danger btn-domingo">Domingo y Festivos:
+                            CERRADO</b>
+                    </small>
+                </div>
+            </div>
+            <div class="col-lg-5 h-tpbar">
+                <div class="text-center h-tpbar border-wsp" id="wsp">
+                    <a class="text-light h-tpbar link-wsp" id="number" href="https://api.whatsapp.com/send?phone=56939229685&=Hola,
+                                Quiero agendar una hora!" target="_blank" rel="noreferrer noopener">
+                        <i class="fa fa-phone-alt text-light icon-call"></i>
+                        <p class="number number-box fw-bolder">¡AGENDA TU HORA AQUÍ! <span class="hiddenText"> &nbsp &nbsp
+                                +56939229685</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="h-100 d-inline-flex box-rrss">
+                    <a class="btn btn-sm-square rounded-circle bg-white icon-rrss me-1" href=""><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-sm-square rounded-circle bg-white icon-rrss me-1" href=""><i
+                            class="fab fa-twitter"></i></a>
+                    <a class="btn btn-sm-square rounded-circle bg-white icon-rrss me-1" href=""><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-sm-square rounded-circle bg-white icon-rrss me-0" href=""><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <img src="img/logo.png" class="logo  img-fluid" id="logo" alt="logo centro nueva salud">
+        </a>
+        <div class="btn-collapse">
+            <button type="button" class="navbar-toggler me-4" style="background-color: #fbfcffe3" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ">
+                    <a href="index.html" class="nav-item inicio nav-link">Inicio</a>
+                    <a href="about.html" class="nav-item about nav-link active">Sobre Nosotros</a>
+                    <a href="service.html" class="nav-item service nav-link text-service">Especialidades Médicas</a>
+                    <div class="nav-item dropdown nav-menu">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Ver Más...</a>
+                        <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                            <a href="patology.html" class="dropdown-item">Patologías</a>
+                            <a href="team.html" class="dropdown-item">Nuestros Especialistas</a>
+                            <a href="appointment.html" class="dropdown-item">Agendar Cita</a>
+                            <a href="examens.html" class="dropdown-item">Examenes ORL</a>
+                            <a href="404.html" class="dropdown-item d-none">404 Page</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item contact nav-link">Contacto</a>
+                    <a href="login.html" class="btn btn-primary rounded-0 d-none d-lg-block text-center">Iniciar
+                        Sesión &nbsp;
+                        <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Header Start -->
+    <div class="txt-header header page-header bg-primary wow slideInDown" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <h1 class="display-3 txt-header text-white mb-3 animated slideInDown">Sobre Nosotros</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb text-uppercase mb-0">
+                    <li class="breadcrumb-item txt-header"><a href="index.html" class="text-white">Inicio</a></li>
+                    <li class="breadcrumb-item txt-header"><a href="#" class="text-white">Más</a></li>
+                    <li class="breadcrumb-item txt-header text-primary active" aria-current="page">Sobre Nosotros</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="d-flex flex-column">
+                        <img class="img-fluid rounded w-75 align-self-end" src="img/about-1.jpg" alt="">
+                        <img class="img-fluid rounded w-50 bg-white pt-3 pe-3" src="img/about-2.jpg" alt=""
+                            style="margin-top: -25%;">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <p class="d-inline-block border rounded-pill py-1 px-4">Sobre Nosotros</p>
+                    <h1 class="mb-4">Somos un Centro Médico y Diagnóstico</h1>
+                    <p>Con énfasis en Otorrinolaringología, Traumatología, Medicina
+                        General y Pediatría.</p>
+                    <p class="mb-4">Entregamos una atención de calidad y equipamiento de punta, que le
+                        ofrece a sus pacientes resolver las necesidades de atención
+                        médica, imagenología y exámenes de laboratorio, con los mejores
+                        profesionales a un precio razonable en el mejor lugar y con
+                        instalaciones de primer nivel.</p>
+                        <h1 class="mb-4">Misión</h1>
+                        <p>Ser líder Regional en prestación de servicios médicos especialmente de Otorrinolaringología y Traumatología, poniendo
+                            a disposición de nuestros pacientes a los mejores profesionales , la mejor infraestructura y tecnología en dichas
+                            areas , así como resolver con calidad en equipamiento y procesos las necesidades en exámenes de laboratorio e
+                            imagenología que la población de la VI y VII región requiera.</p>
+                        <h1 class="mb-4">Visión</h1>
+                        <p>Ser un referente nacional en atención ambulatoria en diversas especialidades de la medicina.</p>
+                    <p><i class="far fa-check-circle text-primary me-3"></i>Atenciones de Calidad</p>
+                    <p><i class="far fa-check-circle text-primary me-3"></i>Profesionales Cualificados</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Feature Start -->
+    <div class="container-fluid bg-primary overflow-hidden my-5 px-lg-0 text-center container-feature">
+        <div class="container feature px-lg-0 h-100">
+            <div class="row g-0 mx-lg-0 h-100">
+                <div class="col-lg-6 wow fadeIn h-100" data-wow-delay="0.1s">
+                    <div class="p-lg-5 h-100">
+                        <p class="d-inline-block border rounded-pill text-light py-1 px-4">Porque tu salud nos importa
+                        </p>
+                        <h1 class="text-white mb-4">¿Por qué elegirnos?</h1>
+                        <p class="text-white mb-4 pb-2">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+                            Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo
+                            justo erat amet</p>
+                        <div class="row g-4 col-feature">
+                            <div class="col-6 col-feature">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light "
+                                        style="width: 55px; height: 55px;">
+                                        <i class="fa fa-user-md text-primary"></i>
+                                    </div>
+                                    <div class="ms-4 col-feature">
+                                        <p class="text-white mb-2 border rounded-pill">Médicos</p>
+                                        <h5 class="text-white mb-0">Lorem ipsum dolor sit amet</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-feature">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
+                                        style="width: 55px; height: 55px;">
+                                        <i class="fa fa-check text-primary"></i>
+                                    </div>
+                                    <div class="ms-4 col-feature">
+                                        <p class="text-white mb-2 border rounded-pill  text-center w-100">Servicio</p>
+                                        <h5 class="text-white mb-0">De Calidad</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-feature">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
+                                        style="width: 55px; height: 55px;">
+                                        <i class="fa fa-comment-medical text-primary"></i>
+                                    </div>
+                                    <div class="ms-4 col-feature">
+                                        <p class="text-white mb-2 border rounded-pill text-center">Consultas</p>
+                                        <h5 class="text-white mb-0">Con los mejores Profesionales de la Salud</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-feature">
+                                <a href="https://api.whatsapp.com/send?phone=56939229685&text=Hola,
+                                            Quiero agendar una hora!" target="_blank" rel="noreferrer
+                                            noopener">
+                                    <div class="d-flex align-items-center wsp">
+                                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
+                                            style="width: 55px; height: 55px;">
+                                            <i class="fa fa-headphones text-primary"></i>
+                                        </div>
+                                        <div class="ms-4 col-feature">
+                                            <p class="text-white mb-2 border rounded-pill">9:00 AM - 19:30 AM</p>
+                                            <h5 class="text-white mb-0">SOPORTE VÍA WHATSAPP <p text-wsp>¡Pinchando aquí!
+                                                </p>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 pe-lg-0 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px; height: 100%;">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid w-100 h-100 img-feature" src="img/nueva_salud_tv/agenda_tu_hora_medica_3.jpg"
+                            alt="Agenda Online">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-light mb-4">Dirección</h5>
+                    <p class="mb-2">
+                        <i class="fa fa-map-marker-alt me-3"></i>Pucará 020, Machalí,
+                        Chile
+                    </p>
+                    <p class="mb-2">
+                        <i class="fa fa-phone-alt me-3"></i>+56 9 3922 9685
+                    </p>
+                    <p class="mb-2">
+                        <i class="fa fa-envelope me-3"></i>centronuevo2019@gmail.com
+                    </p>
+                    <div class="d-flex pt-2 text-center">
+                        <a class="btn btn-outline-light btn-social rounded-circle"
+                            href="https://www.facebook.com/centromediconuevasalud"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social rounded-circle"
+                            href="https://twitter.com/centronuevasal1?lang=es"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social rounded-circle"
+                            href="https://www.instagram.com/centromediconuevasalud/?hl=es"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-light mb-4">Servicios</h5>
+                    <a class="btn btn-link" href="otorrino.html">Otorrinolaringología</a>
+                    <a class="btn btn-link" href="pediatria.html">Pediatría</a>
+                    <a class="btn btn-link" href="neurologia-infantil.html">Neurología Infantil</a>
+                    <a class="btn btn-link" href="traumatologia.html">Traumatología</a>
+                    <a class="btn btn-link" href="medicina-general.html">Medicina General Adulto</a>
+                    <a class="btn btn-link" href="psicologia.html">Psicología</a>
+                    <a class="btn btn-link" href="psiquitatria-infantojuvenil.html">Psiquiatría Infantojuvenil</a>
+                    <a class="btn btn-link" href="cirugia-infantil.html">Cirugía Infantil</a>
+                    <a class="btn btn-link" href="obstetricia.html">Obstetricia</a>
+                    <a class="btn btn-link" href="gastro.html">Gastroenterología</a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-light mb-4">Enlaces Directos</h5>
+                    <a class="btn btn-link" href="about.html">Sobre Nosotros</a>
+                    <a class="btn btn-link" href="contact.html">Contáctenos</a>
+                    <a class="btn btn-link" href="service.html">Especialidades</a>
+                    <a class="btn btn-link" href="team.html">Médicos</a>
+                    <a class="btn btn-link" href="appointment.html">Agendar Cita</a>
+                </div>
+                <div class="col-md-6 info text-center">
+                    <h5 class="text-light mb-4">Boletín Informativo</h5>
+                    <p>
+                        Si quieres saber de los primeros cuando hay agenda disponible
+                        ingrese su email
+                    </p>
+                    <div class="position-relative mx-auto" style="max-width: 400px">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Tu email" />
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">
+                            Inscríbete
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy;
+                        <a class="border-bottom" href="index.html">Centro y Diagnóstico Nueva Salud SPA 2022</a>, All
+                        Right Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        Diseñado por
+                        <a class="border-bottom" href="https://htmlcodex.com">Rodrigo Lira</a>
+                        <br />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top btn-back"><i
+            class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="https://kit.fontawesome.com/4fd0c3dd1a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
