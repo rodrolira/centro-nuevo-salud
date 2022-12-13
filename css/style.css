@@ -779,9 +779,8 @@ a.nav-item.contact.nav-link {
 }
 
 
-.container-fluid.page-header {
-  height: 40vh;
-}
+
+
 
 .border-start {
   height: 100%;
@@ -842,7 +841,7 @@ a.nav-item.contact.nav-link {
 }
 
 .container-feature {
-  height       : 80vh;
+
   margin-bottom: 0 !important;
 }
 
@@ -860,7 +859,7 @@ a.nav-item.contact.nav-link {
 
 @media (max-width: 576px) {
   .container-feature {
-    height : 750px;
+       height: 140vh !important;
     padding: 24px;
   }
 
