@@ -345,14 +345,7 @@ big.fa-phone-alt {
     margin-left: 10px;
   }
 
-  .number {
-    height     : 100% !important;
-    display    : inline-flex;
-    margin     : 0 !important;
-    width      : 100%;
-    font-size  : 0.7rem;
-    align-items: center;
-  }
+
 
   .link-wsp {
     width          : 100%;
