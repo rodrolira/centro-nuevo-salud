@@ -306,8 +306,6 @@ big.fa-phone-alt {
   .border-box-1 {
     height       : 100%;
     width        : 25%;
-    padding-right: 5px;
-    padding-left : 5px !important;
     align-items  : CENTER !important;
   }
 
@@ -691,8 +689,9 @@ a.nav-item.contact.nav-link {
 
 .img-header {
   transition: 5s;
-  transform : translateX(-100%) !important;
-  animation : transicion-header 5s;
+  transform: translateX(-100%) !important;
+  animation: transicion-header 5s;
+  -webkit-animation: transicion-header 5s;
 }
 
 .header-carousel .owl-carousel-text {

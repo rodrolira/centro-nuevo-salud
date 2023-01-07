@@ -3,6 +3,7 @@
 var btnAgenda = document.getElementById('btnAgenda'),
     formAgenda = document.getElementById('formAgenda'),
     consultaMedica = document.getElementById('consultaMedica'),
+    formPaciente =document.getElementById('form-paciente')
     displayForm = 0;
 
 
@@ -20,12 +21,13 @@ function mostrar() {
 
     if (displayForm == 1) {
         consultaMedica.classList.add('d-none');
-        consultaMedica.classList.remove('d-block');
+        formPaciente.id.add('d-block');
+        formPaciente.classList.remove('d-block');
         displayForm = 1;
     }
     else {
-        consultaMedica.classList.remove('d-none');
-        consultaMedica.classList.add('d-block');
+        formPaciente.id.add('d-block');
+        consultaMedica.classList.add('d-none');
         displayForm = 0;
     }
 
