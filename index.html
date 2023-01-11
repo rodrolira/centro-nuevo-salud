@@ -11,29 +11,22 @@
             Con énfasis en Otorrinolaringología, Traumatología, Medicina General
             y Pediatría." name="description">
 
-
     <!-- Prefetch -->
 
-    <link rel="prefetch" href="appointment.html" as="document">
+    <link rel="prefetch" href="js/main.js" as="script">
 
     <!-- Preload -->
-    <link href="css/style.css" rel="preload" as="style">
 
-    <link href="css/bootstrap.min.css" rel="preload" as="style">
-
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="preload" as="font">
-
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" as="icon">
-
-
-
-    <link rel="preload" href="img/nueva_salud_tv/main-caulier.jpg" as="image">
-    <link rel="preload" href="img/nueva_salud_tv/main-vargas.jpg" as="image">
-    <link rel="preload" href="img/nueva_salud_tv/main-vasquez.jpg" as="image">
-
-
-    <!--Bootstrap5-->
-
+    <link rel="preload" href="css/bootstrap.min.css" as="style">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="lib/animate/animate.min.css" as="style">
+    <link rel="preload" href="lib/owlcarousel/assets/owl.carousel.min.css" as="style">
+    <link rel="preload" href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" as="style" />
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
     <!-- Favicon -->
     <link href="img/favicon/favicon-16x16.png" rel="icon">
@@ -41,25 +34,13 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
 
 
     <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet/less" type="text/css" href="css/styles.less" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-
-    <!-- Vue3 -->
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 
 <body>
@@ -75,7 +56,6 @@
         </div>
     </div>
     <!-- Spinner End -->
-
 
     <!-- Topbar Start -->
     <div class="container-fluid container-topbar bg-light bg-blue p-0
@@ -135,7 +115,6 @@
     </div>
     <!-- Topbar End -->
 
-
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top
             p-0 wow fadeIn" data-wow-delay="0.1s">
@@ -187,7 +166,6 @@
         </div>
     </nav>
     <!-- Navbar End -->
-
 
     <!-- Header Start -->
     <div class="container-fluid header bg-primary p-0 mb-5">
@@ -243,7 +221,11 @@
             <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                 <div class="owl-carousel header-carousel">
                     <div class="owl-carousel-item position-relative">
-                        <img loading="lazy" class="img-fluid" src="img/nueva_salud_tv/main-caulier.jpg" alt="">
+                        <picture>
+                            <source loading="lazy" srcset="img/nueva_salud_tv/main-caulier.webp" type="image/webp">
+                            <img loading="lazy" class="img-fluid" src="img/nueva_salud_tv/main-caulier.jpg"
+                                alt="maria caulier otorrino">
+                        </picture>
                         <div class="owl-carousel-text">
                             <h1 class="display-1 text-white mb-0
                                     txt-header">Los Mejores Especialistas de
@@ -252,7 +234,11 @@
                         </div>
                     </div>
                     <div class="owl-carousel-item position-relative">
-                        <img loading="lazy" class="img-fluid" src="img/nueva_salud_tv/main-vasquez.jpg" alt="">
+                        <picture>
+                            <source loading="lazy"" srcset=" img/nueva_salud_tv/main-vasquez.webp" type="image/webp">
+                            <img loading="lazy" class="img-fluid" src="img/nueva_salud_tv/main-vasquez.jpg"
+                                alt="rodrigo vasquez traumatolo de hombreo y rodilla">
+                        </picture>
                         <div class="owl-carousel-text">
                             <h1 class="display-1 text-white mb-0
                                     txt-header">Diversas Especialidades
@@ -260,7 +246,11 @@
                         </div>
                     </div>
                     <div class="owl-carousel-item position-relative">
-                        <img loading="lazy" class="img-fluid" src="img/nueva_salud_tv/main-vargas.jpg" alt="">
+                        <picture>
+                            <source loading="lazy" srcset="img/nueva_salud_tv/main-vargas.webp" type="image/webp">
+                            <img loading="lazy" class="img-fluid" src="img/nueva_salud_tv/main-vargas.jpg"
+                                alt="patricio vargas ">
+                        </picture>
                         <div class="owl-carousel-text">
                             <h1 class="display-1 text-white mb-0
                                     txt-header">Atenciones de Calidad</h1>
@@ -272,7 +262,6 @@
     </div>
 
     <!-- Header End -->
-
 
     <!-- About Start -->
     <div class="container-xxl py-5" id="about">
@@ -1134,15 +1123,10 @@
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
     <script src="https://kit.fontawesome.com/4fd0c3dd1a.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-        crossorigin="anonymous"></script>
-
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-
-
+    <script src="js/modernizr.js"></script>
 </body>
 
 </html>
