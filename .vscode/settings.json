@@ -1,5 +1,8 @@
 {
     "cSpell.words": [
         "Gonano"
+    ],
+    "githubPullRequests.ignoredPullRequestBranches": [
+        "main"
     ]
 }
