@@ -304,9 +304,9 @@ big.fa-phone-alt {
   }
 
   .border-box-1 {
-    height       : 100%;
-    width        : 25%;
-    align-items  : CENTER !important;
+    height     : 100%;
+    width      : 25%;
+    align-items: CENTER !important;
   }
 
   .address {
@@ -608,18 +608,18 @@ big.fa-phone-alt {
 }
 
 .navbar .btn {
-  height         : 100%;
-  max-width      : 380px;
-  min-width      : 160px;
-  display        : inline-flex !important;
-  align-content  : center;
-  flex-wrap      : wrap;
-  justify-content: center;
-  width          : 70%;
-  align-items    : center;
-  border         : none;
-  margin-left    : 30px;
-  font-size      : smaller;
+  height          : 100%;
+  max-width       : 380px;
+  min-width       : 160px;
+  display         : inline-flex !important;
+  align-content   : center;
+  flex-wrap       : wrap;
+  justify-content : center;
+  width           : 70%;
+  align-items     : center;
+  border          : none;
+  margin-left     : 30px;
+  font-size       : smaller;
   background-color: #1b514a !important;
 }
 
@@ -681,9 +681,9 @@ a.nav-item.contact.nav-link {
 }
 
 .img-header {
-  transition: 5s;
-  transform: translateX(-100%) !important;
-  animation: transicion-header 5s;
+  transition       : 5s;
+  transform        : translateX(-100%) !important;
+  animation        : transicion-header 5s;
   -webkit-animation: transicion-header 5s;
 }
 
@@ -761,8 +761,18 @@ a.nav-item.contact.nav-link {
   border-radius: 5px;
 }
 
+.webp .page-header {
+    background-image : url(../img/banner.webp);
+}
+
+.no-webp .page-header {
+  background-image: url(../img/banner.jpg);
+}
+
 .page-header {
-  background           : url(../img/banner.jpg) top center no-repeat;
+  background-image     : url(../img/banner.jpg);
+  background-position  : top center;
+  background-repeat    : no-repeat;
   background-size      : cover;
   text-shadow          : -2px 3px 8px rgba(0, 0, 0);
   background-attachment: fixed;
@@ -851,7 +861,7 @@ a.nav-item.contact.nav-link {
 
 @media (max-width: 576px) {
   .container-feature {
-       height: 140vh !important;
+    height : 140vh !important;
     padding: 24px;
   }
 
@@ -974,7 +984,7 @@ div.d-flex.align-items-center.wsp:hover {
   border-bottom-color: var(--primary);
 }
 
-.btn-agendar{
+.btn-agendar {
   top: 90%;
 }
 
@@ -1002,14 +1012,14 @@ div.d-flex.align-items-center.wsp:hover {
 
 .agenda.card {
   display: flex;
-  width: 50%;
-  height: 50%;
+  width  : 50%;
+  height : 50%;
 
 }
 
 
 /*** MEDIA QUERYS ***/
-@media  (max-width:1024px) {
+@media (max-width:1024px) {
   .agenda.card {
     width: 75% !important;
   }

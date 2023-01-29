@@ -1,5 +1,5 @@
-/*! modernizr 3.6.0 (Custom Build) | MIT *
- * https://modernizr.com/download/?-webp-setclasses !*/
+/*! modernizr 3.6.0 (Custom Build) | MIT */
+/* https://modernizr.com/download/?-webp-setclasses !*/
 !(function (e, n, A) {
   function o(e, n) {
     return typeof e === n;
