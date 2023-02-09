@@ -1,1139 +1,1308 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="utf-8">
-    <title>Centro Médico Nueva Salud</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="otorrino, pediatria, medicina, doctor, doctora, Rancagua,
+    <head>
+        <meta charset="utf-8">
+        <title>Centro Médico Nueva Salud</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="otorrino, pediatria, medicina, doctor, doctora, Rancagua,
             machali" name="keywords">
-    <meta content="Somos un Centro Médico y Diagnóstico.
+        <meta content="Somos un Centro Médico y Diagnóstico.
             Con énfasis en Otorrinolaringología, Traumatología, Medicina General
             y Pediatría." name="description">
 
-    <!-- Prefetch -->
+        <!-- Prefetch -->
 
-    <link rel="prefetch" href="js/main.js" as="script">
+        <link rel="prefetch" href="js/main.js" as="script">
 
-    <!-- Preload -->
+        <!-- Preload -->
 
-    <link rel="preload" href="css/bootstrap.min.css" as="style">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="preload" href="css/style.css" as="style">
-    <link rel="preload" href="lib/animate/animate.min.css" as="style">
-    <link rel="preload" href="lib/owlcarousel/assets/owl.carousel.min.css" as="style">
-    <link rel="preload" href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" as="style">
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="preload" as="style">
+        <link rel="preload" href="css/bootstrap.min.css" as="style">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.min.css" rel="stylesheet">
+        <link rel="preload" href="css/style.min.css" as="style">
+        <link rel="preload" href="lib/animate/animate.min.css" as="style">
+        <link rel="preload" href="lib/owlcarousel/assets/owl.carousel.min.css"
+            as="style">
+        <link rel="preload"
+            href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
+            as="style">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css"
+            rel="stylesheet">
+        <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap"
+            rel="preload" as="style">
 
-    <!-- Favicon -->
-    <link href="img/favicon/favicon-16x16.png" rel="icon">
+        <!-- Favicon -->
+        <link href="img/favicon/favicon-16x16.png" rel="icon">
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap"
+            rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <link rel="preload" href="https://rsms.me/inter/inter.css" as="style">
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+        <link rel="preload"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+            as="style">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    </head>
 
-</head>
-
-<body>
-    <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed
+    <body>
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed
             translate-middle
             w-100 vh-100 top-50 start-50 d-flex align-items-center
             justify-content-center">
-        <div class="spinner-grow text-primary" style="width: 3rem;
+            <div class="spinner-grow text-primary" style="width: 3rem;
                 height:
                 3rem;" role="status">
-            <span class="sr-only visually-hidden">Loading...</span>
+                <span class="sr-only visually-hidden">Loading...</span>
+            </div>
         </div>
-    </div>
-    <!-- Spinner End -->
+        <!-- Spinner End -->
 
-    <!-- Topbar Start -->
-    <div class="container-fluid container-topbar bg-light bg-blue p-0
+        <!-- Topbar Start -->
+        <div class="container-fluid container-topbar bg-light bg-blue p-0
             wow fadeIn" data-wow-delay="0.1s">
-        <div class="row gx-0 d-none d-lg-flex h-tpbar">
-            <div class="col-lg-7 top-bar border-box-1">
-                <div class=" d-inline-flex align-items-center
+            <div class="row gx-0 d-none d-lg-flex h-tpbar">
+                <div class="col-lg-7 top-bar border-box-1">
+                    <div class=" d-inline-flex align-items-center
                         box-address">
-                    <big class="fa fa-map-marker-alt text-light
+                        <big class="fa fa-map-marker-alt text-light
                             icon-address"></big>
-                    <a class="fs-6 btn-address" href="contact.html">
-                        <small class="top-bar address" id="direccion">Pucará
-                            020, Machalí</small></a>
-                </div>
-                <div class="top-horario h-100 d-inline-flex
+                        <a class="fs-6 btn-address" href="contact.html">
+                            <small class="top-bar address" id="direccion">Pucará
+                                020, Machalí</small></a>
+                    </div>
+                    <div class="top-horario h-100 d-inline-flex
                         align-items-center">
-                    <big class="far fa-clock text-light me-xl-2
+                        <big class="far fa-clock text-light me-xl-2
                             icon-clock"></big>
-                    <small class="top-bar h-tpbar horario">
-                        <div class="hora-semana">
-                            <p class="txt-horario h-tpbar"> Lunes -
-                                Viernes: 08.00AM - 20.00PM </p>
-                            <p class="txt-horario h-tpbar"> Sábado:
-                                09.00AM - 14.00PM</p>
-                        </div>
-                        <b class="text-uppercase text-bg-danger
+                        <small class="top-bar h-tpbar horario">
+                            <div class="hora-semana">
+                                <p class="txt-horario h-tpbar"> Lunes -
+                                    Viernes: 08.00AM - 20.00PM </p>
+                                <p class="txt-horario h-tpbar"> Sábado:
+                                    09.00AM - 14.00PM</p>
+                            </div>
+                            <b class="text-uppercase text-bg-danger
                                 border-danger btn-domingo">Domingo y
-                            Festivos:
-                            CERRADO</b>
-                    </small>
+                                Festivos:
+                                CERRADO</b>
+                        </small>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-5 h-tpbar">
-                <div class="text-center h-tpbar border-wsp" id="wsp">
-                    <a class="text-light h-tpbar link-wsp" id="number" href="https://wa.me/5211234567890?text=Hola,
-                            quiero agendar una hora!" target="_blank" rel="noreferrer noopener">
-                        <i class="fa fa-phone-alt text-light icon-call"></i>
-                        <p class="number number-box fw-bolder">¡AGENDA
-                            TU HORA AQUÍ! <span class="hiddenText">
-                                &nbsp
-                                &nbsp +56939229685</span>
-                        </p>
-                    </a>
-                </div>
-                <div class="h-100 d-inline-flex box-rrss">
-                    <a class="btn btn-sm-square rounded-circle bg-white
-                            icon-rrss me-1" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-sm-square rounded-circle bg-white
+                <div class="col-lg-5 h-tpbar">
+                    <div class="text-center h-tpbar border-wsp" id="wsp">
+                        <a class="text-light h-tpbar link-wsp" id="number"
+                            href="https://wa.me/5211234567890?text=Hola,
+                            quiero agendar una hora!" target="_blank"
+                            rel="noreferrer noopener">
+                            <i class="fa fa-phone-alt text-light icon-call"></i>
+                            <p class="number number-box fw-bolder">¡AGENDA
+                                TU HORA AQUÍ! <span class="hiddenText">
+                                    &nbsp
+                                    &nbsp +56939229685</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="h-100 d-inline-flex box-rrss">
+                        <a class="btn btn-sm-square rounded-circle bg-white
+                            icon-rrss me-1" href=""><i class="fab
+                                fa-facebook-f"></i></a>
+                        <a class="btn btn-sm-square rounded-circle bg-white
                             icon-rrss me-1" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-sm-square rounded-circle bg-white
-                            icon-rrss me-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-sm-square rounded-circle bg-white
+                        <a class="btn btn-sm-square rounded-circle bg-white
+                            icon-rrss me-1" href=""><i class="fab
+                                fa-linkedin-in"></i></a>
+                        <a class="btn btn-sm-square rounded-circle bg-white
                             icon-rrss me-0" href=""><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Topbar End -->
+        <!-- Topbar End -->
 
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top
             p-0 wow fadeIn" data-wow-delay="0.1s">
-        <a href="index.html" class="navbar-brand d-flex
+            <a href="index.html" class="navbar-brand d-flex
                 align-items-center">
-            <img loading="lazy" src="img/logo.png" class="logo img-fluid" id="logo" alt="logo centro nueva salud">
-        </a>
-        <div class="btn-collapse">
-            <button type="button" name="menu" class="navbar-toggler me-4" style="background-color: #fbfcffe3"
-                data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ">
-                    <a href="index.html" class="nav-item inicio nav-link
+                <img loading="lazy" src="img/logo.png" class="logo img-fluid"
+                    id="logo" alt="logo centro nueva salud">
+            </a>
+            <div class="btn-collapse">
+                <button type="button" name="menu" class="navbar-toggler me-4"
+                    style="background-color: #fbfcffe3"
+                    data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ">
+                        <a href="index.html" class="nav-item inicio nav-link
                             active">Inicio</a>
-                    <a href="#about" class="nav-item about
+                        <a href="#about" class="nav-item about
                             nav-link">Sobre Nosotros</a>
-                    <a href="#service" class="nav-item service
+                        <a href="#service" class="nav-item service
                             nav-link text-service">Especialidades Médicas</a>
-                    <div class="nav-item dropdown nav-menu">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Ver Más...</a>
-                        <div class="dropdown-menu rounded-0
+                        <div class="nav-item dropdown nav-menu">
+                            <a href="#" class="nav-link dropdown-toggle"
+                                data-bs-toggle="dropdown">Ver Más...</a>
+                            <div class="dropdown-menu rounded-0
                                 rounded-bottom m-0">
-                            <a href="patology.html" class="dropdown-item">Patologías</a>
-                            <a href="#team" class="dropdown-item">Nuestros
-                                Especialistas</a>
-                            <a href="appointment.html" class="dropdown-item">Agendar Cita</a>
-                            <a href="examens.html" class="dropdown-item">Examenes ORL</a>
-                            <a href="404.html" class="dropdown-item
+                                <a href="patology.html" class="dropdown-item">Patologías</a>
+                                <a href="#team" class="dropdown-item">Nuestros
+                                    Especialistas</a>
+                                <a href="appointment.html"
+                                    class="dropdown-item">Agendar Cita</a>
+                                <a href="examens.html" class="dropdown-item">Examenes
+                                    ORL</a>
+                                <a href="404.html" class="dropdown-item
                                     d-none">404 Page</a>
+                            </div>
                         </div>
-                    </div>
-                    <a href="contact.html" class="nav-item contact
+                        <a href="contact.html" class="nav-item contact
                             nav-link">Contacto</a>
 
-                    <!--SISTEMA DE LOGIN-->
+                        <!--SISTEMA DE LOGIN-->
 
-                    <!--<a href="login.html" class="btn btn-primary rounded-0 d-none d-lg-block text-center">Iniciar
+                        <!--<a href="login.html" class="btn btn-primary rounded-0 d-none d-lg-block text-center">Iniciar
                         Sesión &nbsp;
                         <i class="fa fa-arrow-right"></i>
                     </a>-->
-                    <a href="appointment.html" class="btn btn-primary rounded-0 d-none
+                        <a href="appointment.html" class="btn btn-primary
+                            rounded-0 d-none
                             d-lg-block text-center">¡AGENDA TU HORA! &nbsp;
-                        <i class="fa fa-arrow-right"></i>
-                    </a>
+                            <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
-    <!-- Navbar End -->
+        </nav>
+        <!-- Navbar End -->
 
-    <!-- Header Start -->
-    <div class="container-fluid header bg-primary p-0 mb-5">
-        <div class="row g-0 align-items-center flex-lg-row page-header
+        <!-- Header Start -->
+        <div class="container-fluid header bg-primary p-0 mb-5">
+            <div class="row g-0 align-items-center flex-lg-row page-header
                 text-center">
-            <!-- MENU 2-->
-            <div class="txt-header index header page-header bg-primary
+                <!-- MENU 2-->
+                <div class="txt-header index header page-header bg-primary
                     wow slideInDown" data-wow-delay="0.1s">
-                <div class="container py-5">
-                    <h1 class="display-3 txt-header text-white mb-3
+                    <div class="container py-5">
+                        <h1 class="display-3 txt-header text-white mb-3
                             animated slideInDown">Centro Médico y
-                        Diagnóstico Nueva Salud</h1>
-                    <nav aria-label="breadcrumb animated slideInDown">
-                        <ol class="breadcrumb text-uppercase mb-0">
-                            <li class="breadcrumb-item txt-header
-                                    active"><a class="text-primary" href="index.html">Inicio</a></li>
-                            <li class="breadcrumb-item txt-header"><a href="#" class="text-white">Más</a></li>
-                            <li class="breadcrumb-item txt-header
+                            Diagnóstico Nueva Salud</h1>
+                        <nav aria-label="breadcrumb animated slideInDown">
+                            <ol class="breadcrumb text-uppercase mb-0">
+                                <li class="breadcrumb-item txt-header
+                                    active"><a class="text-primary"
+                                        href="index.html">Inicio</a></li>
+                                <li class="breadcrumb-item txt-header"><a
+                                        href="#" class="text-white">Más</a></li>
+                                <li class="breadcrumb-item txt-header
                                     text-light" aria-current="page">Sobre
-                                Nosotros
-                            </li>
-                        </ol>
-                    </nav>
-                </div>
-            </div>
-            <!--MENU 1-->
-            <div class="col-lg-6 p-5 wow fadeIn menu-1" data-wow-delay="0.1s">
-                <h1 class="display-4 text-white mb-5"><b>Centro Médico y
-                        Diagnóstico Nueva Salud</b></h1>
-                <div class="counter-header row g-4">
-                    <div class="col-sm-4">
-                        <div class="border-start border-light ps-4">
-                            <h2 class="text-white mb-1" data-toggle="counter-up">27</h2>
-                            <p class="text-light mb-0">Médicos</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="border-start border-light ps-4">
-                            <h2 class="text-white mb-1" data-toggle="counter-up">11</h2>
-                            <p class="text-light mb-0">Profesionales de
-                                Otra Áreas</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="border-start border-light ps-4">
-                            <h2 class="text-white mb-1" data-toggle="counter-up">19772</h2>
-                            <p class="text-light mb-0">Total de
-                                Pacientes</p>
-                        </div>
+                                    Nosotros
+                                </li>
+                            </ol>
+                        </nav>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                <div class="owl-carousel header-carousel">
-                    <div class="owl-carousel-item position-relative">
-                        <picture>
-                            <source loading="lazy" srcset="img/nueva_salud_tv/main-caulier.webp" type="image/webp">
-                            <img loading="lazy" class="img-fluid" src="img/nueva_salud_tv/main-caulier.jpg"
-                                alt="maria caulier otorrino">
-                        </picture>
-                        <div class="owl-carousel-text">
-                            <h1 class="display-1 text-white mb-0
+                <!--MENU 1-->
+                <div class="col-lg-6 p-5 wow fadeIn menu-1"
+                    data-wow-delay="0.1s">
+                    <h1 class="display-4 text-white mb-5"><b>Centro Médico y
+                            Diagnóstico Nueva Salud</b></h1>
+                    <div class="counter-header row g-4">
+                        <div class="col-sm-4">
+                            <div class="border-start border-light ps-4">
+                                <h2 class="text-white mb-1"
+                                    data-toggle="counter-up">27</h2>
+                                <p class="text-light mb-0">Médicos</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="border-start border-light ps-4">
+                                <h2 class="text-white mb-1"
+                                    data-toggle="counter-up">11</h2>
+                                <p class="text-light mb-0">Profesionales de
+                                    Otra Áreas</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="border-start border-light ps-4">
+                                <h2 class="text-white mb-1"
+                                    data-toggle="counter-up">19772</h2>
+                                <p class="text-light mb-0">Total de
+                                    Pacientes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="owl-carousel header-carousel">
+                        <div class="owl-carousel-item position-relative">
+                            <picture>
+                                <source loading="lazy"
+                                    srcset="img/nueva_salud_tv/main-caulier.webp"
+                                    type="image/webp">
+                                <img loading="lazy" class="img-fluid"
+                                    src="img/nueva_salud_tv/main-caulier.jpg"
+                                    alt="maria caulier otorrino">
+                            </picture>
+                            <div class="owl-carousel-text">
+                                <h1 class="display-1 text-white mb-0
                                     txt-header">Los Mejores Especialistas de
-                                la Región
-                            </h1>
+                                    la Región
+                                </h1>
+                            </div>
                         </div>
-                    </div>
-                    <div class="owl-carousel-item position-relative">
-                        <picture>
-                            <source loading="lazy"" srcset=" img/nueva_salud_tv/main-vasquez.webp" type="image/webp">
-                            <img loading="lazy" class="img-fluid" src="img/nueva_salud_tv/main-vasquez.jpg"
-                                alt="rodrigo vasquez traumatolo de hombreo y rodilla">
-                        </picture>
-                        <div class="owl-carousel-text">
-                            <h1 class="display-1 text-white mb-0
+                        <div class="owl-carousel-item position-relative">
+                            <picture>
+                                <source loading="lazy"" srcset="
+                                    img/nueva_salud_tv/main-vasquez.webp"
+                                    type="image/webp">
+                                <img loading="lazy" class="img-fluid"
+                                    src="img/nueva_salud_tv/main-vasquez.jpg"
+                                    alt="rodrigo vasquez traumatolo de hombreo y
+                                    rodilla">
+                            </picture>
+                            <div class="owl-carousel-text">
+                                <h1 class="display-1 text-white mb-0
                                     txt-header">Diversas Especialidades
-                                Médicas </h1>
+                                    Médicas </h1>
+                            </div>
                         </div>
-                    </div>
-                    <div class="owl-carousel-item position-relative">
-                        <picture>
-                            <source loading="lazy" srcset="img/nueva_salud_tv/main-vargas.webp" type="image/webp">
-                            <img loading="lazy" class="img-fluid" src="img/nueva_salud_tv/main-vargas.jpg"
-                                alt="patricio vargas ">
-                        </picture>
-                        <div class="owl-carousel-text">
-                            <h1 class="display-1 text-white mb-0
+                        <div class="owl-carousel-item position-relative">
+                            <picture>
+                                <source loading="lazy"
+                                    srcset="img/nueva_salud_tv/main-vargas.webp"
+                                    type="image/webp">
+                                <img loading="lazy" class="img-fluid"
+                                    src="img/nueva_salud_tv/main-vargas.jpg"
+                                    alt="patricio vargas ">
+                            </picture>
+                            <div class="owl-carousel-text">
+                                <h1 class="display-1 text-white mb-0
                                     txt-header">Atenciones de Calidad</h1>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Header End -->
+        <!-- Header End -->
 
-    <!-- About Start -->
-    <div class="container-xxl py-5" id="about">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="d-flex flex-column">
-                        <picture>
-                            <source loading="lazy" srcset="img/about-1.webp" type="image/webp">
-                            <img loading="lazy" class="img-fluid rounded w-100 align-self-end" src="img/about-1.jpg" alt="">
-                        </picture>
-                        <picture>
-                            <source loading="lazy" srcset="img/about-2.webp" type="image/webp">
-                            <img loading="lazy" class="img-fluid rounded w-50 bg-white pt-3
-                                                            pe-3" src="img/about-2.jpg" alt="" style="margin-top: -25%;">
-                        </picture>
+        <!-- About Start -->
+        <div class="container-xxl py-5" id="about">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="d-flex flex-column">
+                            <picture>
+                                <source loading="lazy" srcset="img/about-1.webp"
+                                    type="image/webp">
+                                <img loading="lazy" class="img-fluid rounded
+                                    w-100 align-self-end" src="img/about-1.jpg"
+                                    alt="">
+                            </picture>
+                            <picture>
+                                <source loading="lazy" srcset="img/about-2.webp"
+                                    type="image/webp">
+                                <img loading="lazy" class="img-fluid rounded
+                                    w-50 bg-white pt-3
+                                    pe-3" src="img/about-2.jpg" alt=""
+                                    style="margin-top: -25%;">
+                            </picture>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-6 wow fadeIn text-center" data-wow-delay="0.5s">
-                    <p class="d-inline-block border rounded-pill py-1
+                    <div class="col-lg-6 wow fadeIn text-center"
+                        data-wow-delay="0.5s">
+                        <p class="d-inline-block border rounded-pill py-1
                             px-4">Sobre Nosotros</p>
-                    <h1 class="mb-4">Somos un Centro Médico y
-                        Diagnóstico</h1>
-                    <p>Con énfasis en Otorrinolaringología,
-                        Traumatología, Medicina
-                        General y Pediatría.</p>
-                    <p class="mb-4">Entregamos una atención de calidad y
-                        equipamiento de punta, que le
-                        ofrece a sus pacientes resolver las necesidades
-                        de atención
-                        médica, imagenología y exámenes de laboratorio,
-                        con los mejores
-                        profesionales a un precio razonable en el mejor
-                        lugar y con
-                        instalaciones de primer nivel.</p>
-                    <p><i class="far fa-check-circle text-primary me-3"></i>Atenciones
-                        de Calidad</p>
-                    <p><i class="far fa-check-circle text-primary me-3"></i>Profesionales
-                        Cualificados</p>
-                    <a class="btn btn-primary rounded-pill py-3 px-5
+                        <h1 class="mb-4">Somos un Centro Médico y
+                            Diagnóstico</h1>
+                        <p>Con énfasis en Otorrinolaringología,
+                            Traumatología, Medicina
+                            General y Pediatría.</p>
+                        <p class="mb-4">Entregamos una atención de calidad y
+                            equipamiento de punta, que le
+                            ofrece a sus pacientes resolver las necesidades
+                            de atención
+                            médica, imagenología y exámenes de laboratorio,
+                            con los mejores
+                            profesionales a un precio razonable en el mejor
+                            lugar y con
+                            instalaciones de primer nivel.</p>
+                        <p><i class="far fa-check-circle text-primary me-3"></i>Atenciones
+                            de Calidad</p>
+                        <p><i class="far fa-check-circle text-primary me-3"></i>Profesionales
+                            Cualificados</p>
+                        <a class="btn btn-primary rounded-pill py-3 px-5
                             mt-3" href="about.html">Leer Más</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- About End -->
+        <!-- About End -->
 
 
-    <!-- Service Start -->
-    <div class="container-xxl py-5" id="service" name="service">
-        <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <p class="d-inline-block border rounded-pill py-1 px-4">Servicios</p>
-                <h1>Especialidades</h1>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item rounded h-100 p-5
+        <!-- Service Start -->
+        <div class="container-xxl py-5" id="service" name="service">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp"
+                    data-wow-delay="0.1s" style="max-width: 600px;">
+                    <p class="d-inline-block border rounded-pill py-1 px-4">Servicios</p>
+                    <h1>Especialidades</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.1s">
+                        <div class="service-item rounded h-100 p-5
                             column-services ">
-                        <div class="d-inline-flex align-items-center
+                            <div class="d-inline-flex align-items-center
                                 justify-content-center bg-white
-                                rounded-circle mb-4" style="width: 65px; height: 65px;">
-                            <i class="fa fa-heartbeat text-primary
+                                rounded-circle mb-4" style="width: 65px; height:
+                                65px;">
+                                <i class="fa fa-heartbeat text-primary
                                     fs-4"></i>
+                            </div>
+                            <h4 class="mb-3">Otorrinolaringología (Adulto e
+                                Infantil)</h4>
+                            <p class="mb-3">Enfocados en el tratamiento de
+                                patologías asociadas al oído, nariz y cavidades
+                                paranasales, cavidad oral, faringe y laringe,
+                                tales como:</p>
+                            <ul>
+                                <li>Hipoacusia (disminución auditiva).</li>
+                                <li>Rinitis.</li>
+                                <li>Apnea del sueño.</li>
+                                <li>Otitis.</li>
+                                <li>Amigdalitis.</li>
+                                <li>Fracturas nasales.</li>
+                                <li>Mareos y vértigo.</li>
+                            </ul>
+                            <a href="especialidades/otorrino.html" class="btn
+                                btn-light dropdown-column" onclick=""><i
+                                    class="fa fa-plus text-primary me-3"></i>Vér
+                                Más</a>
                         </div>
-                        <h4 class="mb-3">Otorrinolaringología (Adulto e
-                            Infantil)</h4>
-                        <p class="mb-3">Enfocados en el tratamiento de
-                            patologías asociadas al oído, nariz y cavidades
-                            paranasales, cavidad oral, faringe y laringe,
-                            tales como:</p>
-                        <ul>
-                            <li>Hipoacusia (disminución auditiva).</li>
-                            <li>Rinitis.</li>
-                            <li>Apnea del sueño.</li>
-                            <li>Otitis.</li>
-                            <li>Amigdalitis.</li>
-                            <li>Fracturas nasales.</li>
-                            <li>Mareos y vértigo.</li>
-                        </ul>
-                        <a href="especialidades/otorrino.html" class="btn btn-light dropdown-column" onclick=""><i
-                                class="fa fa-plus text-primary me-3"></i>Vér
-                            Más</a>
                     </div>
-                </div>
 
-                <div class="col-lg-4 col-md-6 wow fadeInUp
+                    <div class="col-lg-4 col-md-6 wow fadeInUp
                         column-services" data-wow-delay="0.3s">
-                    <div class="service-item rounded h-100 p-5
+                        <div class="service-item rounded h-100 p-5
                             box-especialidades">
-                        <div class="d-inline-flex align-items-center
+                            <div class="d-inline-flex align-items-center
                                 justify-content-center bg-white
-                                rounded-circle mb-4" style="width: 65px; height: 65px">
-                            <i class="fa fa-baby text-primary fs-4"></i>
+                                rounded-circle mb-4" style="width: 65px; height:
+                                65px">
+                                <i class="fa fa-baby text-primary fs-4"></i>
+                            </div>
+                            <h4 class="mb-3">Pediatría</h4>
+                            <p class="mb-4">
+                                Especializados tanto en pacientes recién
+                                nacidos como también niños de 14 años,
+                                encargandose de multiples dolencias,
+                                resfriados de distinto indoles.
+                                Como También nos preocupamos de enseñar a
+                                los padres sobre como actuar ante estas,
+                                sobre todo en recién nacidos.
+                            </p>
+                            <a class="btn btn-light dropdown-column"
+                                href="especialidades/pediatria.html"><i
+                                    class="fa fa-plus text-primary me-3"></i>Ver
+                                Más</a>
                         </div>
-                        <h4 class="mb-3">Pediatría</h4>
-                        <p class="mb-4">
-                            Especializados tanto en pacientes recién
-                            nacidos como también niños de 14 años,
-                            encargandose de multiples dolencias,
-                            resfriados de distinto indoles.
-                            Como También nos preocupamos de enseñar a
-                            los padres sobre como actuar ante estas,
-                            sobre todo en recién nacidos.
-                        </p>
-                        <a class="btn btn-light dropdown-column" href="especialidades/pediatria.html"><i
-                                class="fa fa-plus text-primary me-3"></i>Ver
-                            Más</a>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp
+                    <div class="col-lg-4 col-md-6 wow fadeInUp
                         column-services" data-wow-delay="0.5s">
-                    <div class="service-item rounded h-100 p-5
+                        <div class="service-item rounded h-100 p-5
                             box-especialidades">
-                        <div class="d-inline-flex align-items-center
+                            <div class="d-inline-flex align-items-center
                                 justify-content-center bg-white
-                                rounded-circle mb-4" style="width: 65px; height: 65px">
-                            <i class="fa fa-brain text-primary fs-4"></i>
+                                rounded-circle mb-4" style="width: 65px; height:
+                                65px">
+                                <i class="fa fa-brain text-primary fs-4"></i>
+                            </div>
+                            <h4 class="mb-3">Neurología Infantil</h4>
+                            <p class="mb-4">
+                                Especializado en tratar trastornos mentales
+                                las cuales pueden venir desde la conceción
+                                como el Autismo, Sindrome de Asperger. Como
+                                también trastornos desarrollados durante la
+                                niñez como es el caso del TDAH.
+                            </p>
+                            <a class="btn btn-light dropdown-column"
+                                href="especialidades/neurologia-infantil.html"><i
+                                    class="fa fa-plus text-primary me-3"></i>Ver
+                                Más</a>
                         </div>
-                        <h4 class="mb-3">Neurología Infantil</h4>
-                        <p class="mb-4">
-                            Especializado en tratar trastornos mentales
-                            las cuales pueden venir desde la conceción
-                            como el Autismo, Sindrome de Asperger. Como
-                            también trastornos desarrollados durante la
-                            niñez como es el caso del TDAH.
-                        </p>
-                        <a class="btn btn-light dropdown-column" href="especialidades/neurologia-infantil.html"><i
-                                class="fa fa-plus text-primary me-3"></i>Ver
-                            Más</a>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp
+                    <div class="col-lg-4 col-md-6 wow fadeInUp
                         column-services" data-wow-delay="0.1s">
-                    <div class="service-item rounded h-100 p-5
+                        <div class="service-item rounded h-100 p-5
                             box-especialidades">
-                        <div class="d-inline-flex align-items-center
+                            <div class="d-inline-flex align-items-center
                                 justify-content-center bg-white
-                                rounded-circle mb-4" style="width: 65px; height: 65px">
-                            <i class="fa fa-crutch text-primary fs-4"></i>
+                                rounded-circle mb-4" style="width: 65px; height:
+                                65px">
+                                <i class="fa fa-crutch text-primary fs-4"></i>
+                            </div>
+                            <h4 class="mb-3">Traumatología y Ortopedia de
+                                Adulto</h4>
+                            <p class="mb-4">
+                                Especialidad que se encarga en el estudio de
+                                afecciones de los musculos y del esqueleto
+                                como tambien lesiones, fracturas y hasta de
+                                enfermedades congenitas como la artrosis.
+                                Este campo tiene una variedad de
+                                sub-especialidades. Las cuales nosotros
+                                contamos con especialistas en Hombro/Codo,
+                                Rodilla, Cadera, y en su defecto
+                                Traumatologos Generales que ven toda parte
+                                del cuerpo.
+                            </p>
+                            <a class="btn btn-light dropdown-column"
+                                href="especialidades/traumatologia.html"><i
+                                    class="fa fa-plus text-primary me-3"></i>Sub-Especialidades</a>
                         </div>
-                        <h4 class="mb-3">Traumatología y Ortopedia de
-                            Adulto</h4>
-                        <p class="mb-4">
-                            Especialidad que se encarga en el estudio de
-                            afecciones de los musculos y del esqueleto
-                            como tambien lesiones, fracturas y hasta de
-                            enfermedades congenitas como la artrosis.
-                            Este campo tiene una variedad de
-                            sub-especialidades. Las cuales nosotros
-                            contamos con especialistas en Hombro/Codo,
-                            Rodilla, Cadera, y en su defecto
-                            Traumatologos Generales que ven toda parte
-                            del cuerpo.
-                        </p>
-                        <a class="btn btn-light dropdown-column" href="especialidades/traumatologia.html"><i
-                                class="fa fa-plus text-primary me-3"></i>Sub-Especialidades</a>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp
+                    <div class="col-lg-4 col-md-6 wow fadeInUp
                         column-services" data-wow-delay="0.3s">
-                    <div class="service-item rounded h-100 p-5
+                        <div class="service-item rounded h-100 p-5
                             box-especialidades">
-                        <div class="d-inline-flex align-items-center
+                            <div class="d-inline-flex align-items-center
                                 justify-content-center bg-white
-                                rounded-circle mb-4" style="width: 65px; height: 65px">
-                            <i class="fa fa-stethoscope text-primary
+                                rounded-circle mb-4" style="width: 65px; height:
+                                65px">
+                                <i class="fa fa-stethoscope text-primary
                                     fs-4"></i>
+                            </div>
+                            <h4 class="mb-3">Medicina General Adulto</h4>
+                            <p class="mb-4">
+                                Es la especialidad médica responsable de la
+                                prestación de la atención primaria y es
+                                fundamental para la prevención, detección y
+                                seguimiento de enfermedades comunes y
+                                crónicas que afectan a pacientes adultos.
+                            </p>
+                            <a class="btn btn-light dropdown-column"
+                                href="especialidades/medicina-general.html"><i
+                                    class="fa fa-plus text-primary me-3"></i>Ver
+                                Más</a>
                         </div>
-                        <h4 class="mb-3">Medicina General Adulto</h4>
-                        <p class="mb-4">
-                            Es la especialidad médica responsable de la
-                            prestación de la atención primaria y es
-                            fundamental para la prevención, detección y
-                            seguimiento de enfermedades comunes y
-                            crónicas que afectan a pacientes adultos.
-                        </p>
-                        <a class="btn btn-light dropdown-column" href="especialidades/medicina-general.html"><i
-                                class="fa fa-plus text-primary me-3"></i>Ver
-                            Más</a>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp
+                    <div class="col-lg-4 col-md-6 wow fadeInUp
                         column-services" data-wow-delay="0.5s">
-                    <div class="service-item rounded h-100 p-5
+                        <div class="service-item rounded h-100 p-5
                             box-especialidades">
-                        <div class="d-inline-flex align-items-center
+                            <div class="d-inline-flex align-items-center
                                 justify-content-center bg-white
-                                rounded-circle mb-4" style="width: 65px; height: 65px">
-                            <i class="fa fa-head-side-virus text-primary
+                                rounded-circle mb-4" style="width: 65px; height:
+                                65px">
+                                <i class="fa fa-head-side-virus text-primary
                                     fs-4"></i>
-                        </div>
-                        <h4 class="mb-3">Psiquiatría Infantojuvenil</h4>
-                        <p class="mb-4">
-                            Brindamos evaluación y consulta
-                            especializada con psiquiatras infantiles,
-                            psiquiatras de niños y adolescentes. Trabajo
-                            con adolescentes. Cuidado de calidad.
+                            </div>
+                            <h4 class="mb-3">Psiquiatría Infantojuvenil</h4>
+                            <p class="mb-4">
+                                Brindamos evaluación y consulta
+                                especializada con psiquiatras infantiles,
+                                psiquiatras de niños y adolescentes. Trabajo
+                                con adolescentes. Cuidado de calidad.
 
-                            Los temas que discutimos incluyen:
-                            terapia infantil
-                            ansiedad
-                            inatención
-                            Discapacidades cognitivas y físicas
-                            problemas emocionales, de conducta
-                            fobia
-                            TDAH
-                            depresión infantil
-                            Problemas de comunicación entre padres e
-                            hijos
-                            guía para padres
-                        </p>
-                        <a class="btn btn-light dropdown-column"
-                            href="especialidades/psiquitatria-infantojuvenil.html"><i
-                                class="fa fa-plus text-primary me-3"></i>Ver
-                            Más</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp
-                        column-services" data-wow-delay="0.1s">
-                    <div class="service-item rounded h-100 p-5
-                            box-especialidades">
-                        <div class="d-inline-flex align-items-center
-                                justify-content-center bg-white
-                                rounded-circle mb-4" style="width: 65px; height: 65px">
-                            <i class="fa fa-head-side-virus text-primary
-                                    fs-4"></i>
+                                Los temas que discutimos incluyen:
+                                terapia infantil
+                                ansiedad
+                                inatención
+                                Discapacidades cognitivas y físicas
+                                problemas emocionales, de conducta
+                                fobia
+                                TDAH
+                                depresión infantil
+                                Problemas de comunicación entre padres e
+                                hijos
+                                guía para padres
+                            </p>
+                            <a class="btn btn-light dropdown-column"
+                                href="especialidades/psiquitatria-infantojuvenil.html"><i
+                                    class="fa fa-plus text-primary me-3"></i>Ver
+                                Más</a>
                         </div>
-                        <h4 class="mb-3">Psicología</h4>
-                        <p class="mb-4">
-                            Estamos especializados en el manejo y
-                            tratamiento, tanto médico
-                            como quirúrgico, de pacientes con
-                            enfermedades y alteraciones
-                            del oído, nariz, garganta y estructuras
-                            relacionadas de la
-                            cabeza y del cuello.
-                        </p>
-                        <a class="btn btn-light dropdown-column" href="especialidades/psicologia.html"><i
-                                class="fa fa-plus text-primary me-3"></i>Ver
-                            Más</a>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp
-                        column-services" data-wow-delay="0.5s">
-                    <div class="service-item rounded h-100 p-5
+                    <div class="col-lg-4 col-md-6 wow fadeInUp
+                        column-services" data-wow-delay="0.1s">
+                        <div class="service-item rounded h-100 p-5
                             box-especialidades">
-                        <div class="d-inline-flex align-items-center
+                            <div class="d-inline-flex align-items-center
                                 justify-content-center bg-white
-                                rounded-circle mb-4" style="width: 65px; height: 65px">
-                            <i class="fa fa-briefcase-medical
+                                rounded-circle mb-4" style="width: 65px; height:
+                                65px">
+                                <i class="fa fa-head-side-virus text-primary
+                                    fs-4"></i>
+                            </div>
+                            <h4 class="mb-3">Psicología</h4>
+                            <p class="mb-4">
+                                Estamos especializados en el manejo y
+                                tratamiento, tanto médico
+                                como quirúrgico, de pacientes con
+                                enfermedades y alteraciones
+                                del oído, nariz, garganta y estructuras
+                                relacionadas de la
+                                cabeza y del cuello.
+                            </p>
+                            <a class="btn btn-light dropdown-column"
+                                href="especialidades/psicologia.html"><i
+                                    class="fa fa-plus text-primary me-3"></i>Ver
+                                Más</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp
+                        column-services" data-wow-delay="0.5s">
+                        <div class="service-item rounded h-100 p-5
+                            box-especialidades">
+                            <div class="d-inline-flex align-items-center
+                                justify-content-center bg-white
+                                rounded-circle mb-4" style="width: 65px; height:
+                                65px">
+                                <i class="fa fa-briefcase-medical
                                     text-primary fs-4"></i>
+                            </div>
+                            <h4 class="mb-3">Cirugía Infantil</h4>
+                            <p class="mb-4">
+                                Erat ipsum justo amet duo et elitr dolor,
+                                est duo duo eos lorem
+                                sed diam stet diam sed stet.
+                            </p>
+                            <a class="btn btn-light dropdown-column"
+                                href="especialidades/cirugia-infantil.html"><i
+                                    class="fa fa-plus text-primary me-3"></i>Ver
+                                Más</a>
                         </div>
-                        <h4 class="mb-3">Cirugía Infantil</h4>
-                        <p class="mb-4">
-                            Erat ipsum justo amet duo et elitr dolor,
-                            est duo duo eos lorem
-                            sed diam stet diam sed stet.
-                        </p>
-                        <a class="btn btn-light dropdown-column" href="especialidades/cirugia-infantil.html"><i
-                                class="fa fa-plus text-primary me-3"></i>Ver
-                            Más</a>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp
+                    <div class="col-lg-4 col-md-6 wow fadeInUp
                         column-services" data-wow-delay="0.5s">
-                    <div class="service-item rounded h-100 p-5
+                        <div class="service-item rounded h-100 p-5
                             box-especialidades">
-                        <div class="d-inline-flex align-items-center
+                            <div class="d-inline-flex align-items-center
                                 justify-content-center bg-white
-                                rounded-circle mb-4" style="width: 65px; height: 65px">
-                            <i class="fa fa-brain text-primary fs-4"></i>
+                                rounded-circle mb-4" style="width: 65px; height:
+                                65px">
+                                <i class="fa fa-brain text-primary fs-4"></i>
+                            </div>
+                            <h4 class="mb-3">Gastroenterología</h4>
+                            <p class="mb-4">
+                                Erat ipsum justo amet duo et elitr dolor,
+                                est duo duo eos lorem
+                                sed diam stet diam sed stet.
+                            </p>
+                            <a class="btn btn-light dropdown-column"
+                                href="especialidades/gastro.html"><i
+                                    class="fa fa-plus text-primary me-3"></i>Ver
+                                Más</a>
                         </div>
-                        <h4 class="mb-3">Gastroenterología</h4>
-                        <p class="mb-4">
-                            Erat ipsum justo amet duo et elitr dolor,
-                            est duo duo eos lorem
-                            sed diam stet diam sed stet.
-                        </p>
-                        <a class="btn btn-light dropdown-column" href="especialidades/gastro.html"><i
-                                class="fa fa-plus text-primary me-3"></i>Ver
-                            Más</a>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp
+                    <div class="col-lg-4 col-md-6 wow fadeInUp
                         column-services" data-wow-delay="0.1s">
-                    <div class="service-item rounded h-100 p-5
+                        <div class="service-item rounded h-100 p-5
                             box-especialidades">
-                        <div class="d-inline-flex align-items-center
+                            <div class="d-inline-flex align-items-center
                                 justify-content-center bg-white
-                                rounded-circle mb-4" style="width: 65px; height: 65px">
-                            <i class="fa fa-crutch text-primary fs-4"></i>
+                                rounded-circle mb-4" style="width: 65px; height:
+                                65px">
+                                <i class="fa fa-crutch text-primary fs-4"></i>
+                            </div>
+                            <h4 class="mb-3">Fonoaudiología</h4>
+                            <p class="mb-4">
+                                Erat ipsum justo amet duo et elitr dolor,
+                                est duo duo eos lorem
+                                sed diam stet diam sed stet.
+                            </p>
+                            <a class="btn btn-light dropdown-column"
+                                href="especialidades/fono.html"><i
+                                    class="fa fa-plus text-primary me-3"></i>Ver
+                                Más</a>
                         </div>
-                        <h4 class="mb-3">Fonoaudiología</h4>
-                        <p class="mb-4">
-                            Erat ipsum justo amet duo et elitr dolor,
-                            est duo duo eos lorem
-                            sed diam stet diam sed stet.
-                        </p>
-                        <a class="btn btn-light dropdown-column" href="especialidades/fono.html"><i
-                                class="fa fa-plus text-primary me-3"></i>Ver
-                            Más</a>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp
+                    <div class="col-lg-4 col-md-6 wow fadeInUp
                         column-services" data-wow-delay="0.3s">
-                    <div class="service-item rounded h-100 p-5
+                        <div class="service-item rounded h-100 p-5
                             box-especialidades">
-                        <div class="d-inline-flex align-items-center
+                            <div class="d-inline-flex align-items-center
                                 justify-content-center bg-white
-                                rounded-circle mb-4" style="width: 65px; height: 65px">
-                            <i class="fa fa-stethoscope text-primary
+                                rounded-circle mb-4" style="width: 65px; height:
+                                65px">
+                                <i class="fa fa-stethoscope text-primary
                                     fs-4"></i>
+                            </div>
+                            <h4 class="mb-3">Kinesiología y Quiropraxia</h4>
+                            <p class="mb-4">
+                                Erat ipsum justo amet duo et elitr dolor,
+                                est duo duo eos lorem
+                                sed diam stet diam sed stet.
+                            </p>
+                            <a class="btn btn-light dropdown-column"
+                                href="especialidades/kine-quiro.html"><i
+                                    class="fa fa-plus text-primary me-3"></i>Ver
+                                Más</a>
                         </div>
-                        <h4 class="mb-3">Kinesiología y Quiropraxia</h4>
-                        <p class="mb-4">
-                            Erat ipsum justo amet duo et elitr dolor,
-                            est duo duo eos lorem
-                            sed diam stet diam sed stet.
-                        </p>
-                        <a class="btn btn-light dropdown-column" href="especialidades/kine-quiro.html"><i
-                                class="fa fa-plus text-primary me-3"></i>Ver
-                            Más</a>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp
+                    <div class="col-lg-4 col-md-6 wow fadeInUp
                         column-services" data-wow-delay="0.5s">
-                    <div class="service-item rounded h-100 p-5
+                        <div class="service-item rounded h-100 p-5
                             box-especialidades">
-                        <div class="d-inline-flex align-items-center
+                            <div class="d-inline-flex align-items-center
                                 justify-content-center bg-white
-                                rounded-circle mb-4" style="width: 65px; height: 65px">
-                            <i class="fa fa-vials text-primary fs-4"></i>
+                                rounded-circle mb-4" style="width: 65px; height:
+                                65px">
+                                <i class="fa fa-vials text-primary fs-4"></i>
+                            </div>
+                            <h4 class="mb-3">Exámenes ORL</h4>
+                            <p class="mb-4">
+                                Erat ipsum justo amet duo et elitr dolor,
+                                est duo duo eos lorem
+                                sed diam stet diam sed stet.
+                            </p>
+                            <a class="btn dropdown-column"
+                                href="especialidades/examens.html"><i
+                                    class="fa fa-plus text-primary me-3"></i>Ver
+                                Más</a>
                         </div>
-                        <h4 class="mb-3">Exámenes ORL</h4>
-                        <p class="mb-4">
-                            Erat ipsum justo amet duo et elitr dolor,
-                            est duo duo eos lorem
-                            sed diam stet diam sed stet.
-                        </p>
-                        <a class="btn dropdown-column" href="especialidades/examens.html"><i
-                                class="fa fa-plus text-primary me-3"></i>Ver
-                            Más</a>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp
+                    <div class="col-lg-4 col-md-6 wow fadeInUp
                         column-services" data-wow-delay="0.5s">
-                    <div class="service-item rounded h-100 p-5
+                        <div class="service-item rounded h-100 p-5
                             box-especialidades">
-                        <div class="d-inline-flex align-items-center
+                            <div class="d-inline-flex align-items-center
                                 justify-content-center bg-white
-                                rounded-circle mb-4" style="width: 65px; height: 65px">
-                            <i class="fa fa-vials text-primary fs-4"></i>
+                                rounded-circle mb-4" style="width: 65px; height:
+                                65px">
+                                <i class="fa fa-vials text-primary fs-4"></i>
+                            </div>
+                            <h4 class="mb-3">Laboratorio (Pronto)</h4>
+                            <p class="mb-4">
+                                Erat ipsum justo amet duo et elitr dolor,
+                                est duo duo eos lorem
+                                sed diam stet diam sed stet.
+                            </p>
+                            <a class="btn btn-light dropdown-column"
+                                href="especialidades/laboratory.html"><i
+                                    class="fa fa-plus text-primary me-3"></i>Ver
+                                Más</a>
                         </div>
-                        <h4 class="mb-3">Laboratorio (Pronto)</h4>
-                        <p class="mb-4">
-                            Erat ipsum justo amet duo et elitr dolor,
-                            est duo duo eos lorem
-                            sed diam stet diam sed stet.
-                        </p>
-                        <a class="btn btn-light dropdown-column" href="especialidades/laboratory.html"><i
-                                class="fa fa-plus text-primary me-3"></i>Ver
-                            Más</a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Service End -->
+        <!-- Service End -->
 
 
 
-    <!-- Feature Start -->
-    <div class="container-fluid bg-primary overflow-hidden my-5 px-lg-0
+        <!-- Feature Start -->
+        <div class="container-fluid bg-primary overflow-hidden my-5 px-lg-0
             text-center container-feature">
-        <div class="container feature px-lg-0 h-100">
-            <div class="row g-0 mx-lg-0 h-100">
-                <div class="col-lg-6 wow fadeIn h-100" data-wow-delay="0.1s">
-                    <div class="p-lg-5 h-100">
-                        <p class="d-inline-block border rounded-pill
+            <div class="container feature px-lg-0 h-100">
+                <div class="row g-0 mx-lg-0 h-100">
+                    <div class="col-lg-6 wow fadeIn h-100"
+                        data-wow-delay="0.1s">
+                        <div class="p-lg-5 h-100">
+                            <p class="d-inline-block border rounded-pill
                                 text-light py-1 px-4">Porque tu salud nos
-                            importa
-                        </p>
-                        <h1 class="text-white mb-4">¿Por qué elegirnos?</h1>
-                        <p class="text-white mb-4 pb-2">Porque cada uno
-                            de nuestro equipo de trabajo esta 100%
-                            comprometido por la salud de cada paciente.
-                        </p>
-                        <p class="text-white mb-4 pb-2"> Dandoles un
-                            servicio de calidad en donde se prioriza el
-                            buen trato hacia ellos, haciendolos sentir
-                            comodos y seguros de nuestra labor.</p>
-                        <p class="text-white mb-4 pb-2">Además cada
-                            profesional pertenciente al centro están en
-                            un constante aprendizaje según su área en
-                            donde se especializan en distintos ambitos
-                            segun en el ambiente en el que se
-                            desenvuelven.</p>
+                                importa
+                            </p>
+                            <h1 class="text-white mb-4">¿Por qué elegirnos?</h1>
+                            <p class="text-white mb-4 pb-2">Porque cada uno
+                                de nuestro equipo de trabajo esta 100%
+                                comprometido por la salud de cada paciente.
+                            </p>
+                            <p class="text-white mb-4 pb-2"> Dandoles un
+                                servicio de calidad en donde se prioriza el
+                                buen trato hacia ellos, haciendolos sentir
+                                comodos y seguros de nuestra labor.</p>
+                            <p class="text-white mb-4 pb-2">Además cada
+                                profesional pertenciente al centro están en
+                                un constante aprendizaje según su área en
+                                donde se especializan en distintos ambitos
+                                segun en el ambiente en el que se
+                                desenvuelven.</p>
 
-                        <div class="row g-4 col-feature">
-                            <div class="col-6 col-feature">
-                                <div class="d-flex align-items-center">
-                                    <div class="d-flex flex-shrink-0
-                                            align-items-center
-                                            justify-content-center
-                                            rounded-circle bg-light " style="width: 55px; height:
-                                            55px;">
-                                        <i class="fa fa-user-md
-                                                text-primary"></i>
-                                    </div>
-                                    <div class="ms-4 col-feature">
-                                        <p class="text-white mb-2 border
-                                                rounded-pill">Médicos</p>
-                                        <h5 class="text-white mb-0">100%
-                                            Comprometidos con el
-                                            Paciente</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 col-feature">
-                                <div class="d-flex align-items-center">
-                                    <div class="d-flex flex-shrink-0
-                                            align-items-center
-                                            justify-content-center
-                                            rounded-circle bg-light" style="width: 55px; height:
-                                            55px;">
-                                        <i class="fa fa-check
-                                                text-primary"></i>
-                                    </div>
-                                    <div class="ms-4 col-feature">
-                                        <p class="text-white mb-2 border
-                                                rounded-pill text-center
-                                                w-100">Servicio
-                                        </p>
-                                        <h5 class="text-white mb-0">De
-                                            Calidad</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 col-feature">
-                                <div class="d-flex align-items-center">
-                                    <div class="d-flex flex-shrink-0
-                                            align-items-center
-                                            justify-content-center
-                                            rounded-circle bg-light" style="width: 55px; height:
-                                            55px;">
-                                        <i class="fa fa-comment-medical
-                                                text-primary"></i>
-                                    </div>
-                                    <div class="ms-4 col-feature">
-                                        <p class="text-white mb-2 border
-                                                rounded-pill text-center">Consultas</p>
-                                        <h5 class="text-white mb-0">Con
-                                            los mejores Profesionales de
-                                            la Salud</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 col-feature">
-                                <a href="https://api.whatsapp.com/send?phone=56939229685&text=Hola,
-                                        Quiero agendar una hora!" target="_blank" rel="noreferrer
-                                        noopener">
-                                    <div class="d-flex
-                                            align-items-center wsp">
+                            <div class="row g-4 col-feature">
+                                <div class="col-6 col-feature">
+                                    <div class="d-flex align-items-center">
                                         <div class="d-flex flex-shrink-0
-                                                align-items-center
-                                                justify-content-center
-                                                rounded-circle bg-light" style="width: 55px; height:
-                                                55px;">
-                                            <i class="fa fa-headphones
-                                                    text-primary"></i>
+                                            align-items-center
+                                            justify-content-center
+                                            rounded-circle bg-light "
+                                            style="width: 55px; height:
+                                            55px;">
+                                            <i class="fa fa-user-md
+                                                text-primary"></i>
                                         </div>
                                         <div class="ms-4 col-feature">
-                                            <p class="text-white mb-2
-                                                    border rounded-pill">9:00
-                                                AM - 19:30 AM</p>
-                                            <h5 class="text-white mb-0">SOPORTE
-                                                VÍA WHATSAPP <p text-wsp>¡Pinchando
-                                                    aquí!</p>
-                                            </h5>
+                                            <p class="text-white mb-2 border
+                                                rounded-pill">Médicos</p>
+                                            <h5 class="text-white mb-0">100%
+                                                Comprometidos con el
+                                                Paciente</h5>
                                         </div>
                                     </div>
-                                </a>
+                                </div>
+                                <div class="col-6 col-feature">
+                                    <div class="d-flex align-items-center">
+                                        <div class="d-flex flex-shrink-0
+                                            align-items-center
+                                            justify-content-center
+                                            rounded-circle bg-light"
+                                            style="width: 55px; height:
+                                            55px;">
+                                            <i class="fa fa-check
+                                                text-primary"></i>
+                                        </div>
+                                        <div class="ms-4 col-feature">
+                                            <p class="text-white mb-2 border
+                                                rounded-pill text-center
+                                                w-100">Servicio
+                                            </p>
+                                            <h5 class="text-white mb-0">De
+                                                Calidad</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-feature">
+                                    <div class="d-flex align-items-center">
+                                        <div class="d-flex flex-shrink-0
+                                            align-items-center
+                                            justify-content-center
+                                            rounded-circle bg-light"
+                                            style="width: 55px; height:
+                                            55px;">
+                                            <i class="fa fa-comment-medical
+                                                text-primary"></i>
+                                        </div>
+                                        <div class="ms-4 col-feature">
+                                            <p class="text-white mb-2 border
+                                                rounded-pill text-center">Consultas</p>
+                                            <h5 class="text-white mb-0">Con
+                                                los mejores Profesionales de
+                                                la Salud</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-feature">
+                                    <a
+                                        href="https://api.whatsapp.com/send?phone=56939229685&text=Hola,
+                                        Quiero agendar una hora!"
+                                        target="_blank" rel="noreferrer
+                                        noopener">
+                                        <div class="d-flex
+                                            align-items-center wsp">
+                                            <div class="d-flex flex-shrink-0
+                                                align-items-center
+                                                justify-content-center
+                                                rounded-circle bg-light"
+                                                style="width: 55px; height:
+                                                55px;">
+                                                <i class="fa fa-headphones
+                                                    text-primary"></i>
+                                            </div>
+                                            <div class="ms-4 col-feature">
+                                                <p class="text-white mb-2
+                                                    border rounded-pill">9:00
+                                                    AM - 19:30 AM</p>
+                                                <h5 class="text-white mb-0">SOPORTE
+                                                    VÍA WHATSAPP <p text-wsp>¡Pinchando
+                                                        aquí!</p>
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6 pe-lg-0 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px; height: 100%;">
-                    <div class="position-relative h-100">
-                        <img loading="lazy" class="img-fluid w-100 h-100 img-feature"
-                            src="img/nueva_salud_tv/agenda_tu_hora_medica_3.jpg" alt="Agenda Online">
+                    <div class="col-lg-6 pe-lg-0 wow fadeIn"
+                        data-wow-delay="0.5s" style="min-height: 400px; height:
+                        100%;">
+                        <div class="position-relative h-100">
+                            <img loading="lazy" class="img-fluid w-100 h-100
+                                img-feature"
+                                src="img/nueva_salud_tv/agenda_tu_hora_medica_3.jpg"
+                                alt="Agenda Online">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Feature End -->
+        <!-- Feature End -->
 
 
-    <!-- Team Start -->
-    <div class="container-xxl py-5" id="team">
-        <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <p class="d-inline-block border rounded-pill py-1 px-4">Médicos</p>
-                <h1>Nuestros médicos</h1>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item position-relative rounded
+        <!-- Team Start -->
+        <div class="container-xxl py-5" id="team">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp"
+                    data-wow-delay="0.1s" style="max-width: 600px;">
+                    <p class="d-inline-block border rounded-pill py-1 px-4">Médicos</p>
+                    <h1>Nuestros médicos</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.1s">
+                        <div class="team-item position-relative rounded
                             overflow-hiddn">
-                        <div class="overflow-hidden">
-                            <a href=""><img loading="lazy" class="img-fluid" src="img/dres/quitral.jpg"
-                                    alt="Ricardo Quitral"></a>
-                        </div>
-                        <div class="team-text bg-light text-center p-4
+                            <div class="overflow-hidden">
+                                <a href=""><img loading="lazy" class="img-fluid"
+                                        src="img/dres/quitral.jpg"
+                                        alt="Ricardo Quitral"></a>
+                            </div>
+                            <div class="team-text bg-light text-center p-4
                                 px-0">
-                            <h5> Dr. Ricardo Quitral</h5>
-                            <p class="text-primary">Otorrinolaringología</p>
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                                <h5> Dr. Ricardo Quitral</h5>
+                                <p class="text-primary">Otorrinolaringología</p>
+                                <div class="team-social text-center">
+                                    <a class="btn btn-square" href=""><i
+                                            class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square" href=""><i
+                                            class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square" href=""><i
+                                            class="fab fa-instagram"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item position-relative rounded
+                    <div class="col-lg-3 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.3s">
+                        <div class="team-item position-relative rounded
                             overflow-hidden">
-                        <div class="overflow-hidden">
-                            <img loading="lazy" class="img-fluid" src="img/dres/caulier.jpg" alt="Carolina
+                            <div class="overflow-hidden">
+                                <img loading="lazy" class="img-fluid"
+                                    src="img/dres/caulier.jpg" alt="Carolina
                                     Caulier" />
-                        </div>
-                        <div class="team-text bg-light text-center p-4
+                            </div>
+                            <div class="team-text bg-light text-center p-4
                                 px-0">
-                            <h5>Dra. María Caulier</h5>
-                            <p class="text-primary">Otorrinolaringología</p>
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                                <h5>Dra. María Caulier</h5>
+                                <p class="text-primary">Otorrinolaringología</p>
+                                <div class="team-social text-center">
+                                    <a class="btn btn-square" href=""><i
+                                            class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square" href=""><i
+                                            class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square" href=""><i
+                                            class="fab fa-instagram"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item position-relative rounded
+                    <div class="col-lg-3 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.5s">
+                        <div class="team-item position-relative rounded
                             overflow-hidden">
-                        <div class="overflow-hidden">
-                            <img loading="lazy" class="img-fluid" src="img/dres/pradenas.jpg" alt="Marcelo
+                            <div class="overflow-hidden">
+                                <img loading="lazy" class="img-fluid"
+                                    src="img/dres/pradenas.jpg" alt="Marcelo
                                     Pradenas" />
-                        </div>
-                        <div class="team-text bg-light text-center p-4
+                            </div>
+                            <div class="team-text bg-light text-center p-4
                                 px-0">
-                            <h5>Dr. Marcelo Pradenas</h5>
-                            <p class="text-primary">Otorrinolaringología</p>
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                                <h5>Dr. Marcelo Pradenas</h5>
+                                <p class="text-primary">Otorrinolaringología</p>
+                                <div class="team-social text-center">
+                                    <a class="btn btn-square" href=""><i
+                                            class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square" href=""><i
+                                            class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square" href=""><i
+                                            class="fab fa-instagram"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item position-relative rounded
+                    <div class="col-lg-3 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.7s">
+                        <div class="team-item position-relative rounded
                             overflow-hidden">
-                        <div class="overflow-hidden">
-                            <img loading="lazy" class="img-fluid" src="img/dres/vasquez.jpg" alt="Rodrigo
+                            <div class="overflow-hidden">
+                                <img loading="lazy" class="img-fluid"
+                                    src="img/dres/vasquez.jpg" alt="Rodrigo
                                     Vasquez" />
-                        </div>
-                        <div class="team-text bg-light text-center p-4
+                            </div>
+                            <div class="team-text bg-light text-center p-4
                                 px-0">
-                            <h5>Dr. Rodrigo Vasquez</h5>
-                            <p class="text-primary">Traumatología</p>
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                                <h5>Dr. Rodrigo Vasquez</h5>
+                                <p class="text-primary">Traumatología</p>
+                                <div class="team-social text-center">
+                                    <a class="btn btn-square" href=""><i
+                                            class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square" href=""><i
+                                            class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square" href=""><i
+                                            class="fab fa-instagram"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item position-relative rounded
+                    <div class="col-lg-3 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.7s">
+                        <div class="team-item position-relative rounded
                             overflow-hidden">
-                        <div class="overflow-hidden">
-                            <img loading="lazy" class="img-fluid" src="img/template/profile-doctor.jpg" alt="" />
-                        </div>
-                        <div class="team-text bg-light text-center p-4
+                            <div class="overflow-hidden">
+                                <img loading="lazy" class="img-fluid"
+                                    src="img/template/profile-doctor.jpg" alt=""
+                                    />
+                            </div>
+                            <div class="team-text bg-light text-center p-4
                                 px-0">
-                            <h5>Dr. Rodrigo Vasquez</h5>
-                            <p class="text-primary">Traumatología</p>
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                                <h5>Dr. Rodrigo Vasquez</h5>
+                                <p class="text-primary">Traumatología</p>
+                                <div class="team-social text-center">
+                                    <a class="btn btn-square" href=""><i
+                                            class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square" href=""><i
+                                            class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square" href=""><i
+                                            class="fab fa-instagram"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item position-relative rounded
+                    <div class="col-lg-3 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.7s">
+                        <div class="team-item position-relative rounded
                             overflow-hidden">
-                        <div class="overflow-hidden">
-                            <img loading="lazy" class="img-fluid" src="img/template/profile-doctor.jpg" alt="" />
-                        </div>
-                        <div class="team-text bg-light text-center p-4
+                            <div class="overflow-hidden">
+                                <img loading="lazy" class="img-fluid"
+                                    src="img/template/profile-doctor.jpg" alt=""
+                                    />
+                            </div>
+                            <div class="team-text bg-light text-center p-4
                                 px-0">
-                            <h5>Dr. Rodrigo Vasquez</h5>
-                            <p class="text-primary">Traumatología</p>
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                                <h5>Dr. Rodrigo Vasquez</h5>
+                                <p class="text-primary">Traumatología</p>
+                                <div class="team-social text-center">
+                                    <a class="btn btn-square" href=""><i
+                                            class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square" href=""><i
+                                            class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square" href=""><i
+                                            class="fab fa-instagram"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item position-relative rounded
+                    <div class="col-lg-3 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.7s">
+                        <div class="team-item position-relative rounded
                             overflow-hidden">
-                        <div class="overflow-hidden">
-                            <img loading="lazy" class="img-fluid" src="img/template/profile-doctor.jpg" alt="" />
-                        </div>
-                        <div class="team-text bg-light text-center p-4
+                            <div class="overflow-hidden">
+                                <img loading="lazy" class="img-fluid"
+                                    src="img/template/profile-doctor.jpg" alt=""
+                                    />
+                            </div>
+                            <div class="team-text bg-light text-center p-4
                                 px-0">
-                            <h5>Dr. Rodrigo Vasquez</h5>
-                            <p class="text-primary">Traumatología</p>
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                                <h5>Dr. Rodrigo Vasquez</h5>
+                                <p class="text-primary">Traumatología</p>
+                                <div class="team-social text-center">
+                                    <a class="btn btn-square" href=""><i
+                                            class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square" href=""><i
+                                            class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square" href=""><i
+                                            class="fab fa-instagram"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item position-relative rounded
+                    <div class="col-lg-3 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.7s">
+                        <div class="team-item position-relative rounded
                             overflow-hidden">
-                        <div class="overflow-hidden">
-                            <img loading="lazy" class="img-fluid" src="img/template/profile-doctor.jpg" alt="" />
-                        </div>
-                        <div class="team-text bg-light text-center p-4
+                            <div class="overflow-hidden">
+                                <img loading="lazy" class="img-fluid"
+                                    src="img/template/profile-doctor.jpg" alt=""
+                                    />
+                            </div>
+                            <div class="team-text bg-light text-center p-4
                                 px-0">
-                            <h5>Dr. Rodrigo Vasquez</h5>
-                            <p class="text-primary">Traumatología</p>
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                                <h5>Dr. Rodrigo Vasquez</h5>
+                                <p class="text-primary">Traumatología</p>
+                                <div class="team-social text-center">
+                                    <a class="btn btn-square" href=""><i
+                                            class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square" href=""><i
+                                            class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square" href=""><i
+                                            class="fab fa-instagram"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item position-relative rounded
+                    <div class="col-lg-3 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.7s">
+                        <div class="team-item position-relative rounded
                             overflow-hidden">
-                        <div class="overflow-hidden">
-                            <img loading="lazy" class="img-fluid" src="img/template/profile-doctor.jpg" alt="" />
-                        </div>
-                        <div class="team-text bg-light text-center p-4
+                            <div class="overflow-hidden">
+                                <img loading="lazy" class="img-fluid"
+                                    src="img/template/profile-doctor.jpg" alt=""
+                                    />
+                            </div>
+                            <div class="team-text bg-light text-center p-4
                                 px-0">
-                            <h5>Dr. Rodrigo Vasquez</h5>
-                            <p class="text-primary">Traumatología</p>
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                                <h5>Dr. Rodrigo Vasquez</h5>
+                                <p class="text-primary">Traumatología</p>
+                                <div class="team-social text-center">
+                                    <a class="btn btn-square" href=""><i
+                                            class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square" href=""><i
+                                            class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square" href=""><i
+                                            class="fab fa-instagram"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item position-relative rounded
+                    <div class="col-lg-3 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.7s">
+                        <div class="team-item position-relative rounded
                             overflow-hidden">
-                        <div class="overflow-hidden">
-                            <img loading="lazy" class="img-fluid" src="img/template/profile-doctor.jpg" alt="" />
-                        </div>
-                        <div class="team-text bg-light text-center p-4
+                            <div class="overflow-hidden">
+                                <img loading="lazy" class="img-fluid"
+                                    src="img/template/profile-doctor.jpg" alt=""
+                                    />
+                            </div>
+                            <div class="team-text bg-light text-center p-4
                                 px-0">
-                            <h5>Dr. Rodrigo Vasquez</h5>
-                            <p class="text-primary">Traumatología</p>
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                                <h5>Dr. Rodrigo Vasquez</h5>
+                                <p class="text-primary">Traumatología</p>
+                                <div class="team-social text-center">
+                                    <a class="btn btn-square" href=""><i
+                                            class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square" href=""><i
+                                            class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square" href=""><i
+                                            class="fab fa-instagram"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item position-relative rounded
+                    <div class="col-lg-3 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.7s">
+                        <div class="team-item position-relative rounded
                             overflow-hidden">
-                        <div class="overflow-hidden">
-                            <img loading="lazy" class="img-fluid" src="img/template/profile-doctor.jpg" alt="" />
-                        </div>
-                        <div class="team-text bg-light text-center p-4
+                            <div class="overflow-hidden">
+                                <img loading="lazy" class="img-fluid"
+                                    src="img/template/profile-doctor.jpg" alt=""
+                                    />
+                            </div>
+                            <div class="team-text bg-light text-center p-4
                                 px-0">
-                            <h5>Dr. Rodrigo Vasquez</h5>
-                            <p class="text-primary">Traumatología</p>
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                                <h5>Dr. Rodrigo Vasquez</h5>
+                                <p class="text-primary">Traumatología</p>
+                                <div class="team-social text-center">
+                                    <a class="btn btn-square" href=""><i
+                                            class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square" href=""><i
+                                            class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square" href=""><i
+                                            class="fab fa-instagram"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item position-relative rounded
+                    <div class="col-lg-3 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.7s">
+                        <div class="team-item position-relative rounded
                             overflow-hidden">
-                        <div class="overflow-hidden">
-                            <img loading="lazy" class="img-fluid" src="img/template/profile-doctor.jpg" alt="" />
-                        </div>
-                        <div class="team-text bg-light text-center p-4
+                            <div class="overflow-hidden">
+                                <img loading="lazy" class="img-fluid"
+                                    src="img/template/profile-doctor.jpg" alt=""
+                                    />
+                            </div>
+                            <div class="team-text bg-light text-center p-4
                                 px-0">
-                            <h5>Dr. Rodrigo Vasquez</h5>
-                            <p class="text-primary">Traumatología</p>
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                                <h5>Dr. Rodrigo Vasquez</h5>
+                                <p class="text-primary">Traumatología</p>
+                                <div class="team-social text-center">
+                                    <a class="btn btn-square" href=""><i
+                                            class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square" href=""><i
+                                            class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square" href=""><i
+                                            class="fab fa-instagram"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item position-relative rounded
+                    <div class="col-lg-3 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.7s">
+                        <div class="team-item position-relative rounded
                             overflow-hidden">
-                        <div class="overflow-hidden">
-                            <img loading="lazy" class="img-fluid" src="img/template/profile-doctor.jpg" alt="" />
-                        </div>
-                        <div class="team-text bg-light text-center p-4
+                            <div class="overflow-hidden">
+                                <img loading="lazy" class="img-fluid"
+                                    src="img/template/profile-doctor.jpg" alt=""
+                                    />
+                            </div>
+                            <div class="team-text bg-light text-center p-4
                                 px-0">
-                            <h5>Dr. Rodrigo Vasquez</h5>
-                            <p class="text-primary">Traumatología</p>
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                                <h5>Dr. Rodrigo Vasquez</h5>
+                                <p class="text-primary">Traumatología</p>
+                                <div class="team-social text-center">
+                                    <a class="btn btn-square" href=""><i
+                                            class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square" href=""><i
+                                            class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square" href=""><i
+                                            class="fab fa-instagram"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Team End -->
+        <!-- Team End -->
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow
             fadeIn text-center" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5 align-items-baseline">
-                <div class="col-lg-4 col-md-6">
-                    <h5 class="text-light mb-4">Dirección</h5>
-                    <p class="mb-2">
-                        <i class="fa fa-map-marker-alt me-3"></i>Pucará
-                        020, Machalí,
-                        Chile
-                    </p>
-                    <p class="mb-2">
-                        <i class="fa fa-phone-alt me-3"></i>+56 9 3922
-                        9685
-                    </p>
-                    <p class="mb-2">
-                        <i class="fa fa-envelope me-3"></i>centronuevo2019@gmail.com
-                    </p>
-                    <div class="d-flex pt-2 text-center
+            <div class="container py-5">
+                <div class="row g-5 align-items-baseline">
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="text-light mb-4">Dirección</h5>
+                        <p class="mb-2">
+                            <i class="fa fa-map-marker-alt me-3"></i>Pucará
+                            020, Machalí,
+                            Chile
+                        </p>
+                        <p class="mb-2">
+                            <i class="fa fa-phone-alt me-3"></i>+56 9 3922
+                            9685
+                        </p>
+                        <p class="mb-2">
+                            <i class="fa fa-envelope me-3"></i>centronuevo2019@gmail.com
+                        </p>
+                        <div class="d-flex pt-2 text-center
                             justify-content-center">
-                        <a class="btn btn-outline-light btn-social
-                                rounded-circle" href="https://www.facebook.com/centromediconuevasalud"><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social
-                                rounded-circle" href="https://twitter.com/centronuevasal1?lang=es"><i
-                                class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social
-                                rounded-circle" href="https://www.instagram.com/centromediconuevasalud/?hl=es"><i
-                                class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social
+                                rounded-circle"
+                                href="https://www.facebook.com/centromediconuevasalud"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social
+                                rounded-circle"
+                                href="https://twitter.com/centronuevasal1?lang=es"><i
+                                    class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social
+                                rounded-circle"
+                                href="https://www.instagram.com/centromediconuevasalud/?hl=es"><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <h5 class="text-light mb-4">Servicios</h5>
-                    <a class="btn btn-link" href="otorrino.html">Otorrinolaringología</a>
-                    <a class="btn btn-link" href="pediatria.html">Pediatría</a>
-                    <a class="btn btn-link" href="neurologia-infantil.html">Neurología
-                        Infantil</a>
-                    <a class="btn btn-link" href="traumatologia.html">Traumatología</a>
-                    <a class="btn btn-link" href="medicina-general.html">Medicina General
-                        Adulto</a>
-                    <a class="btn btn-link" href="psicologia.html">Psicología</a>
-                    <a class="btn btn-link" href="psiquitatria-infantojuvenil.html">Psiquiatría
-                        Infantojuvenil</a>
-                    <a class="btn btn-link" href="cirugia-infantil.html">Cirugía Infantil</a>
-                    <a class="btn btn-link" href="obstetricia.html">Obstetricia</a>
-                    <a class="btn btn-link" href="gastro.html">Gastroenterología</a>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <h5 class="text-light mb-4">Enlaces Directos</h5>
-                    <a class="btn btn-link" href="about.html">Sobre
-                        Nosotros</a>
-                    <a class="btn btn-link" href="contact.html">Contáctenos</a>
-                    <a class="btn btn-link" href="service.html">Especialidades</a>
-                    <a class="btn btn-link" href="team.html">Médicos</a>
-                    <a class="btn btn-link" href="appointment.html">Agendar
-                        Cita</a>
-                </div>
-                <div class="col-md-6 info text-center">
-                    <h5 class="text-light mb-4">Boletín Informativo</h5>
-                    <p>
-                        Si quieres saber de los primeros cuando hay
-                        agenda disponible
-                        ingrese su email
-                    </p>
-                    <div class="position-relative mx-auto" style="max-width: 400px">
-                        <input class="form-control border-0 w-100 py-3
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="text-light mb-4">Servicios</h5>
+                        <a class="btn btn-link" href="otorrino.html">Otorrinolaringología</a>
+                        <a class="btn btn-link" href="pediatria.html">Pediatría</a>
+                        <a class="btn btn-link" href="neurologia-infantil.html">Neurología
+                            Infantil</a>
+                        <a class="btn btn-link" href="traumatologia.html">Traumatología</a>
+                        <a class="btn btn-link" href="medicina-general.html">Medicina
+                            General
+                            Adulto</a>
+                        <a class="btn btn-link" href="psicologia.html">Psicología</a>
+                        <a class="btn btn-link"
+                            href="psiquitatria-infantojuvenil.html">Psiquiatría
+                            Infantojuvenil</a>
+                        <a class="btn btn-link" href="cirugia-infantil.html">Cirugía
+                            Infantil</a>
+                        <a class="btn btn-link" href="obstetricia.html">Obstetricia</a>
+                        <a class="btn btn-link" href="gastro.html">Gastroenterología</a>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="text-light mb-4">Enlaces Directos</h5>
+                        <a class="btn btn-link" href="about.html">Sobre
+                            Nosotros</a>
+                        <a class="btn btn-link" href="contact.html">Contáctenos</a>
+                        <a class="btn btn-link" href="service.html">Especialidades</a>
+                        <a class="btn btn-link" href="team.html">Médicos</a>
+                        <a class="btn btn-link" href="appointment.html">Agendar
+                            Cita</a>
+                    </div>
+                    <div class="col-md-6 info text-center">
+                        <h5 class="text-light mb-4">Boletín Informativo</h5>
+                        <p>
+                            Si quieres saber de los primeros cuando hay
+                            agenda disponible
+                            ingrese su email
+                        </p>
+                        <div class="position-relative mx-auto" style="max-width:
+                            400px">
+                            <input class="form-control border-0 w-100 py-3
                                 ps-4 pe-5" type="text" placeholder="Tu email" />
-                        <button type="button" class="btn btn-primary
+                            <button type="button" class="btn btn-primary
                                 py-2 position-absolute top-0 end-0 mt-2
                                 me-2">
-                            Inscríbete
-                        </button>
+                                Inscríbete
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="copyright">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3
                             mb-md-0">
-                        &copy;
-                        <a class="border-bottom" href="index.html">Centro
-                            y Diagnóstico Nueva Salud SPA 2022</a>,
-                        All
-                        Right Reserved.
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Diseñado por
-                        <a class="border-bottom" href="https://htmlcodex.com">Rodrigo Lira</a>
-                        <br />
+                            &copy;
+                            <a class="border-bottom" href="index.html">Centro
+                                y Diagnóstico Nueva Salud SPA 2022</a>,
+                            All
+                            Right Reserved.
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                            Diseñado por
+                            <a class="border-bottom"
+                                href="https://htmlcodex.com">Rodrigo Lira</a>
+                            <br />
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Footer End -->
+        <!-- Footer End -->
 
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square
             rounded-circle back-to-top btn-back"><i class="bi bi-arrow-up"></i></a>
-    <!-- JavaScript Libraries -->
-    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/tempusdominus/js/moment.min.js"></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-    <script src="https://kit.fontawesome.com/4fd0c3dd1a.js" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-        crossorigin="anonymous"></script>
+        <!-- JavaScript Libraries -->
+        <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/tempusdominus/js/moment.min.js"></script>
+        <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+        <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+        <script src="https://kit.fontawesome.com/4fd0c3dd1a.js"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+            crossorigin="anonymous"></script>
 
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-    <script src="js/modernizr.js"></script>
-</body>
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        <script src="js/modernizr.js"></script>
+    </body>
 
 </html>
