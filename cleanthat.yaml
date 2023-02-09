@@ -1,31 +1,26 @@
-syntax_version: "2021-08-02"
+syntax_version: "2023-01-09"
 meta:
   labels:
   - "cleanthat"
   refs:
-    branches:
+    protected_patterns:
     - "refs/heads/develop"
     - "refs/heads/main"
     - "refs/heads/master"
 source_code:
-  excludes: []
-  includes: []
+  excludes:
+  - "regex:.*/generated/.*"
   encoding: "UTF-8"
-  line_ending: "UNKNOWN"
-languages:
-- language: "json"
-  language_version: "0"
+  line_ending: "GIT"
+engines:
+- engine: "spotless"
   skip: false
   source_code:
-    excludes: []
-    includes: []
-    encoding: "UTF-8"
-    line_ending: "UNKNOWN"
-  processors:
-  - engine: "jackson"
+    includes:
+    - "regex:.*\\.java"
+    - "regex:.*\\.json"
+    - "glob:**/pom.xml"
+  steps:
+  - id: "spotless"
     parameters:
-      indent: -1
-      indentation: "    "
-      space_before_separator: true
-      alphabetical_order: false
-      eol_at_eof: false
+      configuration: "repository:/.cleanthat/spotless.yaml"
