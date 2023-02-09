@@ -4,5 +4,6 @@
     ],
     "githubPullRequests.ignoredPullRequestBranches": [
         "main"
-    ]
+    ],
+    "livePreview.defaultPreviewPath": "/index.html"
 }
