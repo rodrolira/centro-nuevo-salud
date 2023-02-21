@@ -5,5 +5,9 @@
     "githubPullRequests.ignoredPullRequestBranches": [
         "main"
     ],
+<<<<<<< HEAD
     "php.debug.executablePath": "C:\\xampp\\php\\ext\\php_xdebug.dll"
+=======
+    "livePreview.defaultPreviewPath": "/index.html"
+>>>>>>> 499ff49a2b6ac2211de4a293a54f8f90e24b060a
 }
