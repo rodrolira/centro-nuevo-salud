@@ -178,7 +178,6 @@
     width: 100%;
     justify-content: space-evenly;
     border-right: solid 1px #f8f8ff;
-
 }
 .me-4.btn-address {
     margin-right: 0 !important;
@@ -267,7 +266,7 @@ big.fa-phone-alt {
     .icon-address {
         width: 15%;
         position: initial;
-        margin-right: 5px ;
+        margin-right: 5px;
     }
     .col-lg-5 {
         display: flex;
@@ -283,7 +282,6 @@ big.fa-phone-alt {
     .link-wsp {
         width: 100%;
         display: flex;
-;
         justify-content: center;
         margin: 0 5px;
     }
@@ -311,7 +309,6 @@ big.fa-phone-alt {
         font-size: 0.7rem;
         text-align: center;
     }
-
     .btn-sm-square {
         width: 18px;
         height: 18px;
@@ -975,8 +972,6 @@ div.d-flex.align-items-center.wsp:hover {
 .footer .copyright a:hover {
     color: var(--primary);
 }
-@media (max-width: 768px) {
-    .footer .info {
-        width: 50%;
-    }
+.col-lg-4.col-md-6 {
+    width: 33.3% !important;
 }
