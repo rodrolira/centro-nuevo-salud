@@ -1,7 +1,4 @@
 {
-  "devDependencies": {
-    "@nuxtjs/vuetify": "^1.12.3"
-  },
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
@@ -9,6 +6,7 @@
     "bootstrap": "^5.2.3",
     "bulma": "^0.9.4",
     "jquery": "^3.6.1",
+    "json": "^11.0.0",
     "moment-timezone": "^0.5.40"
   }
 }
