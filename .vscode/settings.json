@@ -4,5 +4,6 @@
     ],
     "githubPullRequests.ignoredPullRequestBranches": [
         "main"
-    ]
+    ],
+    "php.debug.executablePath": "C:\\xampp\\php\\ext\\php_xdebug.dll"
 }
