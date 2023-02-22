@@ -172,6 +172,7 @@
 .horario.top-bar {
     text-align: center;
     width: 100%;
+        padding: 0 24px;
 }
 .border-wsp {
     align-items: center;
@@ -545,7 +546,8 @@ a.nav-item.contact.nav-link {
     }
 }
 .logo {
-    height: 100%;
+    height: 50px;
+    width: 50px;
 }
 .header {
     z-index: 500;
