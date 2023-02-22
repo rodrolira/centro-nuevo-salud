@@ -478,7 +478,7 @@ big.fa-phone-alt {
 }
 .navbar.sticky-top {
     transition: 0.5s;
-    height: 9vh;
+    height: 4vh;
     z-index: 5000;
 }
 .navbar .navbar-brand {
