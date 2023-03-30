@@ -167,12 +167,11 @@
     justify-content: space-evenly !important;
     max-width: 370px;
     min-width: 200px;
-    padding: 0 15px;
+
 }
 .horario.top-bar {
     text-align: center;
     width: 100%;
-        padding: 0 24px;
 }
 .border-wsp {
     align-items: center;
@@ -478,7 +477,7 @@ big.fa-phone-alt {
 }
 .navbar.sticky-top {
     transition: 0.5s;
-    height: 4vh;
+    height: 7vh;
     z-index: 5000;
 }
 .navbar .navbar-brand {
@@ -546,8 +545,8 @@ a.nav-item.contact.nav-link {
     }
 }
 .logo {
-    height: 50px;
-    width: 50px;
+    height: 5vh;
+    width: auto;
 }
 .header {
     z-index: 500;
